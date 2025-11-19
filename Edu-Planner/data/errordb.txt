@@ -1,0 +1,578 @@
+[
+  {
+    "error": "Confusing processes with programs",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Assuming a program file (e.g., /bin/ls) is the same as a running instance",
+    "outcome": "Misunderstanding process lifecycle, resource allocation, and concurrency"
+  },
+  {
+    "error": "Assuming context switching is the same as process creation",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Not distinguishing between saving/restoring state (switching) vs. forking a new process",
+    "outcome": "Overestimating overhead of multitasking; poor system design choices"
+  },
+  {
+    "error": "Using busy-waiting instead of proper synchronization",
+    "topic": "Chapter 6: Synchronization Tools",
+    "how_to_prone_it": "Implementing spinlocks in user space without understanding CPU waste",
+    "outcome": "High CPU usage, poor performance, and system unresponsiveness"
+  },
+  {
+    "error": "Ignoring the difference between deadlock and livelock",
+    "topic": "Chapter 8: Deadlocks",
+    "how_to_prone_it": "Treating all hangs as deadlocks without analyzing thread progress",
+    "outcome": "Incorrect debugging; applying deadlock recovery to livelock scenarios"
+  },
+  {
+    "error": "Assuming virtual memory eliminates the need for memory management",
+    "topic": "Chapter 10: Virtual Memory",
+    "how_to_prone_it": "Writing memory-intensive apps without considering page faults or working sets",
+    "outcome": "Thrashing, poor performance, or OOM killer termination"
+  },
+  {
+    "error": "Confusing paging with segmentation",
+    "topic": "Chapter 9: Main Memory",
+    "how_to_prone_it": "Using terms interchangeably despite different fragmentation and allocation models",
+    "outcome": "Misunderstanding modern OS memory architecture (most use paging only)"
+  },
+  {
+    "error": "Thinking SSDs don’t need TRIM or wear leveling",
+    "topic": "Chapter 11: Mass-Storage Structure",
+    "how_to_prone_it": "Treating SSDs like traditional HDDs in application or system design",
+    "outcome": "Premature SSD wear, performance degradation, data loss"
+  },
+  {
+    "error": "Assuming file permissions alone guarantee security",
+    "topic": "Chapter 17: Protection",
+    "how_to_prone_it": "Ignoring capabilities, MAC, or sandboxing in privilege-sensitive apps",
+    "outcome": "Privilege escalation via symlink attacks or process injection"
+  },
+  {
+    "error": "Using strcpy() or gets() without bounds checking",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Writing C code with unsafe string functions for user input",
+    "outcome": "Buffer overflow vulnerabilities; remote code execution"
+  },
+  {
+    "error": "Confusing authentication with authorization",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Granting access based only on login without role-based checks",
+    "outcome": "Users access data they shouldn’t (e.g., patient records in healthcare apps)"
+  },
+  {
+    "error": "Assuming all threads share file descriptors by default",
+    "topic": "Chapter 4: Threads and Concurrency",
+    "how_to_prone_it": "Not realizing file descriptors are per-process, not per-thread",
+    "outcome": "Race conditions on file I/O; corrupted log files"
+  },
+  {
+    "error": "Calling fork() in multithreaded programs without caution",
+    "topic": "Chapter 4: Threads and Concurrency",
+    "how_to_prone_it": "Forking after creating threads, leaving child in inconsistent state",
+    "outcome": "Deadlocks in child process; undefined behavior"
+  },
+  {
+    "error": "Using global variables in signal handlers",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Modifying non-volatile global state in async signal context",
+    "outcome": "Data corruption; intermittent crashes hard to reproduce"
+  },
+  {
+    "error": "Ignoring the difference between hard and soft links",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Assuming both behave identically when moving/deleting files",
+    "outcome": "Broken references; unexpected file persistence after deletion"
+  },
+  {
+    "error": "Assuming mmap() is always faster than read()",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Using memory mapping for small or sequential I/O without profiling",
+    "outcome": "Increased TLB pressure; worse performance than buffered I/O"
+  },
+  {
+    "error": "Not closing file descriptors in long-running daemons",
+    "topic": "Chapter 2: Operating-System Structures",
+    "how_to_prone_it": "Opening logs or sockets without proper cleanup in systemd services",
+    "outcome": "EMFILE errors; service crashes after hours/days"
+  },
+  {
+    "error": "Confusing CPU-bound and I/O-bound process behavior",
+    "topic": "Chapter 5: CPU Scheduling",
+    "how_to_prone_it": "Applying the same scheduling policy to both types of workloads",
+    "outcome": "Poor interactivity (for I/O-bound) or low throughput (for CPU-bound)"
+  },
+  {
+    "error": "Assuming Round Robin eliminates starvation",
+    "topic": "Chapter 5: CPU Scheduling",
+    "how_to_prone_it": "Not realizing priority-based RR can still starve low-priority tasks",
+    "outcome": "Critical background tasks never run"
+  },
+  {
+    "error": "Using sleep() for thread synchronization",
+    "topic": "Chapter 7: Synchronization Examples",
+    "how_to_prone_it": "Replacing condition variables with arbitrary delays",
+    "outcome": "Race conditions; timing-dependent bugs; poor portability"
+  },
+  {
+    "error": "Forgetting to initialize mutexes or semaphores",
+    "topic": "Chapter 7: Synchronization Examples",
+    "how_to_prone_it": "Declaring but not initializing synchronization primitives",
+    "outcome": "Undefined behavior; silent data races or crashes"
+  },
+  {
+    "error": "Holding locks during I/O operations",
+    "topic": "Chapter 6: Synchronization Tools",
+    "how_to_prone_it": "Acquiring a mutex before a disk or network call",
+    "outcome": "Reduced concurrency; thread pool exhaustion"
+  },
+  {
+    "error": "Assuming all page faults are errors",
+    "topic": "Chapter 10: Virtual Memory",
+    "how_to_prone_it": "Treating minor page faults as crashes in application logic",
+    "outcome": "Unnecessary error handling; poor performance tuning"
+  },
+  {
+    "error": "Confusing swapping with paging",
+    "topic": "Chapter 9: Main Memory",
+    "how_to_prone_it": "Using “swapping” to describe modern page-based VM systems",
+    "outcome": "Miscommunication about memory management mechanisms"
+  },
+  {
+    "error": "Disabling ASLR for debugging and leaving it off in production",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Using setarch or sysctl to disable ASLR during dev and forgetting to revert",
+    "outcome": "Predictable memory layout; easier exploitation of memory bugs"
+  },
+  {
+    "error": "Running containers with --privileged in production",
+    "topic": "Chapter 18: Virtual Machines",
+    "how_to_prone_it": "Using privileged mode to “make it work” without understanding risks",
+    "outcome": "Container breakout; full host compromise"
+  },
+  {
+    "error": "Assuming cloud storage provides strong consistency",
+    "topic": "Chapter 19: Networks and Distributed Systems",
+    "how_to_prone_it": "Reading immediately after write in S3-like systems expecting latest data",
+    "outcome": "Stale data bugs; inconsistent application state"
+  },
+  {
+    "error": "Ignoring NUMA locality in memory allocation",
+    "topic": "Chapter 5: CPU Scheduling",
+    "how_to_prone_it": "Allocating memory from remote NUMA node due to default policy",
+    "outcome": "Higher latency; reduced throughput in HPC workloads"
+  },
+  {
+    "error": "Using systemd without understanding socket activation",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Writing services that start on boot instead of on-demand via sockets",
+    "outcome": "Wasted resources; slower boot times"
+  },
+  {
+    "error": "Confusing WSL1 with WSL2 architecture",
+    "topic": "Chapter 2: Operating-System Structures",
+    "how_to_prone_it": "Assuming both use the same kernel or file system semantics",
+    "outcome": "File permission or I/O performance surprises when switching"
+  },
+  {
+    "error": "Not handling partial writes in vectored I/O",
+    "topic": "Chapter 12: I/O",
+    "how_to_prone_it": "Assuming writev() always writes all iovec entries completely",
+    "outcome": "Truncated network messages or corrupted files"
+  },
+  {
+    "error": "Assuming all file systems support hard links to directories",
+    "topic": "Chapter 14: File-System Implementation",
+    "how_to_prone_it": "Trying to create directory hard links on ext4 or NTFS",
+    "outcome": "Operation not permitted errors; broken scripts"
+  },
+  {
+    "error": "Using FAT32 for large files (>4GB)",
+    "topic": "Chapter 11: Mass-Storage Structure",
+    "how_to_prone_it": "Formatting USB drives as FAT32 for video backups without checking limits",
+    "outcome": "File copy failures; incomplete backups"
+  },
+  {
+    "error": "Confusing capabilities with traditional Unix permissions",
+    "topic": "Chapter 17: Protection",
+    "how_to_prone_it": "Granting CAP_NET_ADMIN without understanding its power",
+    "outcome": "Container or process can manipulate network stack; security breach"
+  },
+  {
+    "error": "Assuming Java’s synchronized guarantees global ordering",
+    "topic": "Chapter 7: Synchronization Examples",
+    "how_to_prone_it": "Using synchronized blocks without volatile or memory barriers for visibility",
+    "outcome": "Stale data reads; subtle concurrency bugs"
+  },
+  {
+    "error": "Not using memory barriers in lock-free code",
+    "topic": "Chapter 6: Synchronization Tools",
+    "how_to_prone_it": "Relying on CAS alone without acquire/release semantics",
+    "outcome": "Reordering by CPU/compiler breaks correctness"
+  },
+  {
+    "error": "Failing to handle EINTR in system calls",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Not retrying read()/write() after signal interruption",
+    "outcome": "Partial I/O; data loss or protocol errors"
+  },
+  {
+    "error": "Assuming fork() copies all memory immediately",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Worrying about fork() overhead without understanding copy-on-write",
+    "outcome": "Avoiding efficient process models unnecessarily"
+  },
+  {
+    "error": "Using strcpy() in kernel modules",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Copying user data into kernel space without bounds checks",
+    "outcome": "Kernel panic; local privilege escalation"
+  },
+  {
+    "error": "Confusing RAID 5 with backup",
+    "topic": "Chapter 11: Mass-Storage Structure",
+    "how_to_prone_it": "Believing RAID protects against accidental deletion or corruption",
+    "outcome": "Permanent data loss during human error"
+  },
+  {
+    "error": "Assuming all signals are queued",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Sending multiple SIGUSR1 and expecting all to be delivered",
+    "outcome": "Lost signals; missed events in event-driven apps"
+  },
+  {
+    "error": "Not validating input in setuid programs",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Trusting environment variables or command-line args in privileged code",
+    "outcome": "Privilege escalation via LD_PRELOAD or PATH manipulation"
+  },
+  {
+    "error": "Using absolute paths in portable shell scripts",
+    "topic": "Chapter 2: Operating-System Structures",
+    "how_to_prone_it": "Hardcoding /bin/bash instead of using #!/usr/bin/env bash",
+    "outcome": "Scripts fail on systems with different path layouts"
+  },
+  {
+    "error": "Assuming all Unix systems have /proc",
+    "topic": "Chapter 2: Operating-System Structures",
+    "how_to_prone_it": "Writing tools that parse /proc without fallbacks",
+    "outcome": "Portability issues on BSD/macOS"
+  },
+  {
+    "error": "Confusing threads with lightweight processes in Linux",
+    "topic": "Chapter 4: Threads and Concurrency",
+    "how_to_prone_it": "Not understanding that pthreads are implemented as tasks with shared mm_struct",
+    "outcome": "Misinterpreting /proc/PID/task behavior"
+  },
+  {
+    "error": "Ignoring the cost of false sharing in multithreaded code",
+    "topic": "Chapter 4: Threads and Concurrency",
+    "how_to_prone_it": "Placing independent variables on the same cache line",
+    "outcome": "Unnecessary cache coherency traffic; poor scalability"
+  },
+  {
+    "error": "Assuming mmap() files are automatically synced to disk",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Not calling msync() before program exit",
+    "outcome": "Data loss on crash or power failure"
+  },
+  {
+    "error": "Using chmod 777 for “quick fix” permissions",
+    "topic": "Chapter 17: Protection",
+    "how_to_prone_it": "Granting full access to solve permission errors temporarily",
+    "outcome": "Security vulnerability; exploited by malware"
+  },
+  {
+    "error": "Confusing process groups with sessions",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Not understanding job control in shells",
+    "outcome": "Signals sent to wrong process groups; broken Ctrl-C behavior"
+  },
+  {
+    "error": "Assuming all page replacement algorithms are implemented in OS",
+    "topic": "Chapter 10: Virtual Memory",
+    "how_to_prone_it": "Expecting LRU in Linux, which uses approximations like clock",
+    "outcome": "Misguided performance tuning"
+  },
+  {
+    "error": "Not closing stdin/stdout in daemon processes",
+    "topic": "Chapter 2: Operating-System Structures",
+    "how_to_prone_it": "Leaving inherited file descriptors open from parent shell",
+    "outcome": "Daemons hang waiting for input; unexpected output"
+  },
+  {
+    "error": "Using strcpy() with overlapping buffers",
+    "topic": "Chapter 9: Main Memory",
+    "how_to_prone_it": "Copying within the same string without memmove()",
+    "outcome": "Undefined behavior; corrupted data"
+  },
+  {
+    "error": "Assuming all filesystems preserve case",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Writing code that assumes MyFile.txt ≠ myfile.txt on all systems",
+    "outcome": "Bugs when deploying to macOS (HFS+/APFS) or Windows (NTFS)"
+  },
+  {
+    "error": "Confusing symbolic links with shortcuts",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Expecting Windows .lnk behavior from Unix symlinks",
+    "outcome": "Broken cross-platform tools"
+  },
+  {
+    "error": "Not handling disk full errors in logging",
+    "topic": "Chapter 11: Mass-Storage Structure",
+    "how_to_prone_it": "Assuming log writes always succeed",
+    "outcome": "Silent failure; loss of critical diagnostics"
+  },
+  {
+    "error": "Assuming all CPUs see memory updates instantly",
+    "topic": "Chapter 6: Synchronization Tools",
+    "how_to_prone_it": "Writing lock-free code without memory model awareness",
+    "outcome": "Non-portable, broken on ARM or POWER"
+  },
+  {
+    "error": "Using atoi() without error checking",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Parsing command-line args with atoi() on invalid input",
+    "outcome": "Silent zero conversion; logic errors"
+  },
+  {
+    "error": "Confusing init with systemd",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Looking for /etc/inittab on modern Linux",
+    "outcome": "Confusion about service management"
+  },
+  {
+    "error": "Assuming all signals can be caught",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Trying to handle SIGKILL or SIGSTOP",
+    "outcome": "Wasted effort; misunderstood signal semantics"
+  },
+  {
+    "error": "Not setting SO_REUSEADDR on server sockets",
+    "topic": "Chapter 12: I/O",
+    "how_to_prone_it": "Restarting server and getting “Address already in use”",
+    "outcome": "Service downtime during restarts"
+  },
+  {
+    "error": "Using printf() in signal handlers",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Calling non-async-signal-safe functions from handlers",
+    "outcome": "Deadlocks or crashes due to malloc() reentrancy"
+  },
+  {
+    "error": "Assuming all file systems support sparse files",
+    "topic": "Chapter 14: File-System Implementation",
+    "how_to_prone_it": "Creating large sparse files on FAT32 or older systems",
+    "outcome": "Unexpected disk full errors"
+  },
+  {
+    "error": "Confusing file size with disk usage (du vs ls)",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Not understanding block allocation and metadata overhead",
+    "outcome": "Misjudging storage requirements"
+  },
+  {
+    "error": "Not using O_CLOEXEC when opening files in multithreaded programs",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Leaving file descriptors open after fork() + exec()",
+    "outcome": "Child processes inherit sensitive file handles"
+  },
+  {
+    "error": "Assuming all terminals support ANSI escape codes",
+    "topic": "Chapter 2: Operating-System Structures",
+    "how_to_prone_it": "Hardcoding color codes without termcap/terminfo",
+    "outcome": "Garbled output on non-standard terminals"
+  },
+  {
+    "error": "Using gets() in any context",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Reading lines without length limits for simplicity",
+    "outcome": "Guaranteed buffer overflow; banned in C11"
+  },
+  {
+    "error": "Confusing CPU affinity with NUMA binding",
+    "topic": "Chapter 5: CPU Scheduling",
+    "how_to_prone_it": "Setting CPU mask without considering memory locality",
+    "outcome": "Remote memory access; degraded performance"
+  },
+  {
+    "error": "Assuming all I/O is blocking by default",
+    "topic": "Chapter 12: I/O",
+    "how_to_prone_it": "Not checking for EAGAIN/EWOULDBLOCK in edge-triggered epoll",
+    "outcome": "Starvation; missed events"
+  },
+  {
+    "error": "Not validating certificate hostnames in TLS",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Accepting any valid cert without hostname check",
+    "outcome": "Man-in-the-middle attacks"
+  },
+  {
+    "error": "Using strcpy(dest, src) when dest size is unknown",
+    "topic": "Chapter 9: Main Memory",
+    "how_to_prone_it": "Copying user input without bounds",
+    "outcome": "Stack/heap overflow"
+  },
+  {
+    "error": "Assuming all processes have a controlling terminal",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Calling tcsetpgrp() in daemons",
+    "outcome": "ENOTTY errors; unexpected behavior"
+  },
+  {
+    "error": "Confusing zombie processes with orphan processes",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Using SIGCHLD handler incorrectly",
+    "outcome": "Zombie accumulation or premature reaping"
+  },
+  {
+    "error": "Not using atomic file writes (write + rename)",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Overwriting config files directly",
+    "outcome": "Corruption on crash during write"
+  },
+  {
+    "error": "Assuming all file systems support extended attributes",
+    "topic": "Chapter 14: File-System Implementation",
+    "how_to_prone_it": "Using xattrs on systems where they’re disabled",
+    "outcome": "Operation not supported errors"
+  },
+  {
+    "error": "Using fflush(stdin)",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Trying to clear input buffer with undefined behavior",
+    "outcome": "Portability issues; no effect on POSIX systems"
+  },
+  {
+    "error": "Confusing virtual address space with physical memory",
+    "topic": "Chapter 10: Virtual Memory",
+    "how_to_prone_it": "Allocating large malloc() blocks and assuming RAM usage",
+    "outcome": "Overcommit surprises; OOM kills"
+  },
+  {
+    "error": "Assuming all Unix systems use ELF binaries",
+    "topic": "Chapter 2: Operating-System Structures",
+    "how_to_prone_it": "Writing binary analysis tools without format detection",
+    "outcome": "Failures on macOS (Mach-O) or legacy systems"
+  },
+  {
+    "error": "Not handling partial reads in TCP",
+    "topic": "Chapter 12: I/O",
+    "how_to_prone_it": "Assuming recv() returns full message in one call",
+    "outcome": "Protocol parsing errors; hangs"
+  },
+  {
+    "error": "Using rand() for security-sensitive randomness",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Generating passwords or tokens with stdlib rand()",
+    "outcome": "Predictable values; account compromise"
+  },
+  {
+    "error": "Confusing file locking with advisory vs mandatory",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Assuming flock() prevents all access on all systems",
+    "outcome": "Race conditions on systems with advisory-only locks"
+  },
+  {
+    "error": "Assuming all file systems preserve file creation time",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Relying on birth time on ext4 (which doesn’t store it)",
+    "outcome": "Missing metadata; broken backup tools"
+  },
+  {
+    "error": "Not using secure temporary files (mkstemp)",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Creating /tmp/myfile.txt with predictable names",
+    "outcome": "Symlink attacks; data leakage"
+  },
+  {
+    "error": "Confusing process priority (nice) with real-time scheduling",
+    "topic": "Chapter 5: CPU Scheduling",
+    "how_to_prone_it": "Using nice -20 expecting real-time guarantees",
+    "outcome": "Missed deadlines in time-sensitive apps"
+  },
+  {
+    "error": "Assuming all signals are delivered immediately",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Not understanding signal masking and pending sets",
+    "outcome": "Delayed signal handling; race conditions"
+  },
+  {
+    "error": "Using system() in setuid programs",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Calling shell commands with user input",
+    "outcome": "Command injection; full system compromise"
+  },
+  {
+    "error": "Not closing database connections on fork()",
+    "topic": "Chapter 3: Processes",
+    "how_to_prone_it": "Sharing DB handles between parent and child",
+    "outcome": "Connection corruption; data loss"
+  },
+  {
+    "error": "Assuming all file systems support hard links",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Using hard links on FAT32 or network filesystems",
+    "outcome": "Operation not permitted errors"
+  },
+  {
+    "error": "Confusing I/O schedulers (CFQ, deadline, noop)",
+    "topic": "Chapter 11: Mass-Storage Structure",
+    "how_to_prone_it": "Tuning I/O scheduler for SSDs (where it’s often irrelevant)",
+    "outcome": "Wasted effort; no performance gain"
+  },
+  {
+    "error": "Not using thread-safe errno access",
+    "topic": "Chapter 4: Threads and Concurrency",
+    "how_to_prone_it": "Checking errno in multithreaded code without TLS awareness",
+    "outcome": "Incorrect error reporting"
+  },
+  {
+    "error": "Assuming all memory allocations are zero-initialized",
+    "topic": "Chapter 9: Main Memory",
+    "how_to_prone_it": "Using malloc() instead of calloc() for security-sensitive buffers",
+    "outcome": "Information leakage from uninitialized memory"
+  },
+  {
+    "error": "Using sprintf() without size limits",
+    "topic": "Chapter 9: Main Memory",
+    "how_to_prone_it": "Formatting strings into fixed buffers",
+    "outcome": "Buffer overflow; stack corruption"
+  },
+  {
+    "error": "Confusing file descriptors with FILE* streams",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Mixing read() and fread() on same fd without fflush",
+    "outcome": "Buffering inconsistencies; data loss"
+  },
+  {
+    "error": "Assuming all systems have /dev/urandom",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Hardcoding /dev/urandom without fallbacks",
+    "outcome": "Portability issues on non-Unix systems"
+  },
+  {
+    "error": "Not validating JSON input in system services",
+    "topic": "Chapter 16: Security",
+    "how_to_prone_it": "Parsing user-provided JSON without schema checks",
+    "outcome": "Denial-of-service via deep nesting or large payloads"
+  },
+  {
+    "error": "Using strcpy() in multi-locale environments",
+    "topic": "Chapter 9: Main Memory",
+    "how_to_prone_it": "Assuming char size is sufficient for UTF-8 sequences",
+    "outcome": "Buffer overflows on non-ASCII input"
+  },
+  {
+    "error": "Confusing virtual memory overcommit modes",
+    "topic": "Chapter 10: Virtual Memory",
+    "how_to_prone_it": "Not understanding Linux overcommit heuristics vs strict",
+    "outcome": "Unexpected malloc() failures or OOM kills"
+  },
+  {
+    "error": "Assuming all file systems support subsecond timestamps",
+    "topic": "Chapter 13: File-System Interface",
+    "how_to_prone_it": "Relying on nanosecond precision on ext3 or FAT",
+    "outcome": "Timestamp rounding; broken build systems"
+  }
+]

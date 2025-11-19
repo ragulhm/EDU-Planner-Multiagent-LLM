@@ -1,0 +1,168 @@
+[
+  {
+    "id": "q1",
+    "topic": "Introduction",
+    "level": "easy",
+    "question": "What is the primary reason multicore systems exist in modern computing?",
+    "options": [
+      "To reduce costs of hardware",
+      "To improve parallel processing capabilities",
+      "To increase memory capacity",
+      "For better user interface"
+    ],
+    "answer": "To improve parallel processing capabilities",
+    "explanation": "Multicore systems allow multiple processors to work simultaneously, enabling faster computation and handling complex tasks efficiently."
+  },
+  {
+    "id": "q2",
+    "topic": "OS Structures",
+    "level": "easy",
+    "question": "What is the purpose of a boot loader like GRUB in OS startup?",
+    "options": [
+      "To load user applications directly",
+      "To initialize hardware and start the kernel",
+      "To handle process scheduling",
+      "For network communication"
+    ],
+    "answer": "To initialize hardware and start the kernel",
+    "explanation": "A boot loader, such as GRUB, is responsible for loading the operating system's kernel into memory when the computer starts up."
+  },
+  {
+    "id": "q3",
+    "topic": "Processes",
+    "level": "easy",
+    "question": "What does a process control block (PCB) store?",
+    "options": [
+      "User credentials and preferences",
+      "The exact code of the running program",
+      "Process state, registers, and scheduling information",
+      "File allocation details"
+    ],
+    "answer": "Process state, registers, and scheduling information",
+    "explanation": "A PCB is a data structure that contains essential information about a process, including its current state, CPU registers, memory limits, and scheduling data."
+  },
+  {
+    "id": "q4",
+    "topic": "Threads and Concurrency",
+    "level": "easy",
+    "question": "What do API-level threads primarily refer to in programming?",
+    "options": [
+      "Hardware instructions for parallel execution",
+      "OS-managed entities that can run concurrently",
+      "Programming constructs like Java Threads or Swift Futures",
+      "Data synchronization models"
+    ],
+    "answer": "Programming constructs like Java Threads or Swift Futures",
+    "explanation": "API-level threads are software-based mechanisms provided by libraries or frameworks (e.g., in Java) for managing concurrent execution within applications."
+  },
+  {
+    "id": "q5",
+    "topic": "CPU Scheduling",
+    "level": "easy",
+    "question": "Why is scheduling important in operating systems?",
+    "options": [
+      "To manage user accounts and permissions",
+      "To organize processes to maximize CPU utilization",
+      "For handling disk I/O requests efficiently",
+      "To ensure secure network communication"
+    ],
+    "answer": "To organize processes to maximize CPU utilization",
+    "explanation": "CPU scheduling determines the order in which processes are executed, ensuring efficient use of processing resources."
+  },
+  {
+    "id": "q6",
+    "topic": "Synchronization Tools",
+    "level": "easy",
+    "question": "What is a key benefit of lock-free algorithms using compare-and-swap (CAS)?",
+    "options": [
+      "They prevent deadlocks entirely without locks",
+      "they are guaranteed to complete execution faster than traditional methods",
+      "they simplify code by avoiding explicit locking mechanisms",
+      "they eliminate the need for memory barriers"
+    ],
+    "answer": "they simplify code by avoiding explicit locking mechanisms",
+    "explanation": "Lock-free algorithms like CAS allow atomic operations without requiring processes to stop, making concurrency easier to implement and reducing deadlock risks."
+  },
+  {
+    "id": "q7",
+    "topic": "Deadlocks",
+    "level": "easy",
+    "question": "What is a common characteristic of livelock in multitasking systems?",
+    "options": [
+      "Processes are waiting indefinitely for an event that never occurs",
+      "Processes keep changing state without making progress, but not blocked"
+    ],
+    "answer": "Processes keep changing state without making progress, but not blocked",
+    "explanation": "Livelock happens when processes or threads change their actions due to a conflict, often repeating the same behavior without resolving it."
+  },
+  {
+    "id": "q8",
+    "topic": "Main Memory",
+    "level": "easy",
+    "question": "What is typically managed through page-based swapping in OS memory?",
+    "options": [
+      "Only volatile data like cache buffers",
+      "Non-volatile storage for long-term persistence",
+      "Virtual address space to handle RAM limitations and improve performance",
+      "Application-level processes or background tasks"
+    ],
+    "answer": "Virtual address space using physical pages divided into pages",
+    "explanation": "Page-based swapping is a memory management technique where the OS divides memory into pages and swaps them in/out from secondary storage to manage limited RAM resources."
+  },
+  {
+    "id": "q9",
+    "topic": "Main Memory",
+    "level": "easy",
+    "question": "What does system paging ensure regarding process isolation?",
+    "options": [
+      "It allows processes to share data directly without boundaries",
+      "Each process has its own separate memory space with no interference from others",
+      "Memory usage is maximized for user applications regardless of security needs",
+      "Processes can access each other's physical memory directly"
+    ],
+    "answer": "Each process has its own separate memory space with no interaction between them",
+    "explanation": null
+  },
+  {
+    "id": "q10",
+    "topic": "I/O Systems",
+    "level": "easy",
+    "question": "What is a basic function of I/O systems in an OS?",
+    "options": [
+      "To manage user inputs like keyboard and mouse interactions",
+      "To handle communication protocols for networking",
+      "To control the flow of data between devices and memory",
+      "For storing permanent file system structures"
+    ],
+    "answer": "To control the flow of input/output operations to devices",
+    "explanation": "I/O systems in operating systems manage device interaction, ensuring efficient handling of tasks like printing or disk reads/writes."
+  },
+  {
+    "id": "q9",
+    "topic": "Main Memory and I/O",
+    "level": "easy",
+    "question": "How does page-based swapping help modern OS memory management?",
+    "options": [
+      "By making all data permanently stored in RAM for faster access",
+      "By allowing the OS to free physical memory by moving inactive pages to disk storage",
+      "It reduces the need for cache memory entirely",
+      "For organizing user threads without interference"
+    ],
+    "answer": "By allowing the OS to free physical memory resources dynamically",
+    "explanation": "Page-based swapping enables the system to manage memory efficiently, freeing up RAM by temporarily storing less-used pages on secondary storage."
+  },
+  {
+    "id": "q10",
+    "topic": "Virtualization and Virtual Memory",
+    "level": "easy",
+    "question": "What is a fundamental goal of virtual memory in operating systems?",
+    "options": [
+      "To provide users with dedicated physical memory regions for each application",
+      "To extend the apparent size of available memory using disk space as an extension",
+      "For managing network bandwidth allocation effectively",
+      "To replace all other forms of storage like SSDs"
+    ],
+    "answer": "To extend the apparent size of available memory using part of it to simulate more than physically exists",
+    "explanation": "Virtual memory allows programs to use more virtual address space than physical RAM, enhancing multitasking by efficiently managing data paging and isolation"
+  }
+]

@@ -1,0 +1,285 @@
+Chapter 1: Introduction
+
+Objective: Understand the evolution, purpose, and structure of modern operating systems.
+Topics Covered:
+
+Multicore systems and parallel processing
+
+NUMA (Non-Uniform Memory Access) architecture
+
+Hadoop clusters and distributed computing overview
+
+Motivation for OS study and modern applications
+Outcome: Grasp the need for OS design in modern computing environments.
+
+Chapter 2: Operating-System Structures
+
+Objective: Learn the architectural and structural components of operating systems.
+Topics Covered:
+
+OS design and implementation principles
+
+Android and iOS structural comparison
+
+GRUB-based Linux boot process
+
+Windows Subsystem for Linux (WSL)
+
+Linkers, loaders, and OS-specific applications
+
+Introduction to BCC debugging tools
+Outcome: Understand the boot, execution, and system interface layers of modern OSes.
+
+Chapter 3: Processes
+
+Objective: Study process concepts, scheduling, and communication.
+Topics Covered:
+
+Process lifecycle and control blocks
+
+Simplified CPU scheduling overview
+
+Memory layout of a C program
+
+Android process hierarchy and RPCs
+
+Systemd in Linux replacing traditional init
+Outcome: Comprehend process creation, communication, and hierarchy in OS design.
+
+Chapter 4: Threads and Concurrency
+
+Objective: Explore concurrent and parallel programming models.
+Topics Covered:
+
+API-level thread support and libraries
+
+Java Threads and Futures
+
+Apple’s Grand Central Dispatch with Swift
+
+Fork-Join parallelism (Java Fork-Join Framework)
+
+Intel Thread Building Blocks (TBB)
+Outcome: Implement and understand multithreading in concurrent environments.
+
+Chapter 5: CPU Scheduling
+
+Objective: Learn CPU scheduling strategies for optimized performance.
+Topics Covered:
+
+Multilevel queue and multicore scheduling
+
+NUMA-aware scheduling and load balancing
+
+Linux CFS scheduler modifications
+
+Round-robin and priority scheduling integration
+
+Heterogeneous multiprocessing and Windows 10 scheduling
+Outcome: Apply scheduling algorithms to optimize CPU utilization and fairness.
+
+Chapter 6: Synchronization Tools
+
+Objective: Introduce synchronization mechanisms and race condition handling.
+Topics Covered:
+
+Architectural issues: instruction reordering & buffer delays
+
+Lock-free algorithms with compare-and-swap (CAS)
+
+Memory models, barriers, and liveness issues
+
+Avoiding data races and synchronization strategies
+Outcome: Identify and use appropriate tools for data consistency in concurrent systems.
+
+Chapter 7: Synchronization Examples
+
+Objective: Apply synchronization tools in solving real-world problems.
+Topics Covered:
+
+Classical synchronization problems (Producer-Consumer, Dining Philosophers)
+
+POSIX semaphores and condition variables
+
+Java synchronization models
+Outcome: Develop practical solutions for synchronization challenges using APIs.
+
+Chapter 8: Deadlocks
+
+Objective: Understand deadlock concepts, prevention, and detection.
+Topics Covered:
+
+Deadlock characterization and handling
+
+Livelock and liveness hazards
+
+Linux lockdep & BCC deadlock detector
+
+Java thread dump analysis for deadlocks
+Outcome: Analyze and prevent deadlocks in multitasking environments.
+
+Chapter 9: Main Memory
+
+Objective: Study memory management and allocation strategies.
+Topics Covered:
+
+Modern memory management principles
+
+ARMv8 64-bit architecture
+
+Dynamic link libraries
+
+Page-based swapping (removal of segmentation)
+Outcome: Manage main memory efficiently with modern hardware considerations.
+
+Chapter 10: Virtual Memory
+
+Objective: Understand advanced memory management with virtualization.
+Topics Covered:
+
+Memory allocation on NUMA systems
+
+Free-frame list and global allocation
+
+Compressed memory and page faults
+
+Memory management in Linux and Windows 10
+Outcome: Implement and analyze virtual memory for process isolation and efficiency.
+
+Chapter 11: Mass-Storage Structure
+
+Objective: Learn about storage technologies and management.
+Topics Covered:
+
+Flash, SSDs, and non-volatile storage
+
+Simplified hard-drive scheduling algorithms
+
+RAID structures and object storage
+
+Cloud storage overview
+Outcome: Compare storage systems and their role in OS-level management.
+
+Chapter 12: I/O Systems
+
+Objective: Understand input/output operations and performance.
+Topics Covered:
+
+Synchronous vs. asynchronous I/O
+
+Blocking vs. non-blocking operations
+
+Vectored I/O
+
+Power management in mobile OS
+Outcome: Analyze and optimize I/O operations for performance and efficiency.
+
+Chapter 13: File-System Interface
+
+Objective: Study user-level file system operations.
+Topics Covered:
+
+Directory structures and protection mechanisms
+
+Memory-mapped files
+
+Shared memory using Windows API
+
+Updated file interface organization
+Outcome: Operate and manage file systems effectively through OS-level interfaces.
+
+Chapter 14: File-System Implementation
+
+Objective: Explore internal file-system mechanisms.
+Topics Covered:
+
+TRIM command and Apple File System (APFS)
+
+Journaling and performance optimization
+Outcome: Understand implementation-level concepts of modern file systems.
+
+Chapter 15: File System Internals
+
+Objective: Gain deep insight into file system internal processes.
+Topics Covered:
+
+In-depth analysis of previous file-system models
+
+Updated internals and data handling
+Outcome: Build conceptual understanding of low-level file operations.
+
+Chapter 16: Security
+
+Objective: Learn about modern OS security threats and mechanisms.
+Topics Covered:
+
+Ransomware, remote access tools, and least privilege principle
+
+Code injection vulnerabilities with examples
+
+Encryption and authentication methods
+
+Address space layout randomization (ASLR)
+
+Security defenses and updated Windows 10 example
+Outcome: Implement and evaluate OS-level security mechanisms effectively.
+
+Chapter 17: Protection
+
+Objective: Explore system and data protection mechanisms.
+Topics Covered:
+
+Protection rings and Bell–LaPadula model
+
+ARM TrustZone and Secure Monitor Calls
+
+Mandatory access control and Linux capabilities
+
+Darwin entitlements, sandboxing, and code signing
+
+Runtime enforcement in Java (Stack Inspection)
+Outcome: Design and manage access control and data protection in secure environments.
+
+Chapter 18: Virtual Machines
+
+Objective: Learn OS-level virtualization and containerization.
+Topics Covered:
+
+Hardware-assisted virtualization
+
+Containers, zones, Docker, and Kubernetes
+
+Research topics: unikernels, library OS, partitioning, separation hypervisors
+Outcome: Deploy and manage virtualized systems and container environments.
+
+Chapter 19: Networks and Distributed Systems
+
+Objective: Study distributed computing and networking integration.
+Topics Covered:
+
+TCP/IP model and cloud storage
+
+Name resolution and Java examples
+
+Distributed file systems: MapReduce, Hadoop, GPFS, Lustre
+Outcome: Understand OS support for networking and distributed systems.
+
+Chapter 20: The Linux System
+
+Objective: Study Linux kernel and architecture.
+Topics Covered:
+
+Overview of Linux 4.x kernel
+
+Internal processes and subsystems
+Outcome: Analyze Linux OS design and kernel management techniques.
+
+Chapter 21: The Windows 10 System
+
+Objective: Understand the internal architecture of Windows 10.
+Topics Covered:
+
+Core architecture, process, and security subsystems
+
+Comparison with Linux
+Outcome: Learn the modern structure and design philosophy of Windows OS.

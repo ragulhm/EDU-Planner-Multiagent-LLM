@@ -1,0 +1,5202 @@
+[
+  {
+    "id": 1,
+    "topic": "Process Synchronization",
+    "question": "Which mechanism ensures that only one process can execute in its critical section at a time?",
+    "options": [
+      "Semaphore",
+      "Deadlock",
+      "Thrashing",
+      "Fragmentation"
+    ],
+    "answer": "Semaphore",
+    "explanation": "Semaphores are synchronization primitives used to control access to shared resources and enforce mutual exclusion."
+  },
+  {
+    "id": 2,
+    "topic": "Memory Optimization",
+    "question": "What technique reduces external fragmentation by relocating allocated memory blocks?",
+    "options": [
+      "Memory compaction",
+      "Paging",
+      "Swapping",
+      "Caching"
+    ],
+    "answer": "Memory compaction",
+    "explanation": "Memory compaction consolidates free memory to create larger contiguous blocks, reducing external fragmentation."
+  },
+  {
+    "id": 3,
+    "topic": "File System Internals",
+    "question": "Which Unix file system structure stores metadata such as file size, permissions, and block pointers?",
+    "options": [
+      "Inode",
+      "Superblock",
+      "Page table",
+      "Process control block"
+    ],
+    "answer": "Inode",
+    "explanation": "Inodes store file metadata and pointers to data blocks, enabling efficient file access and management."
+  },
+  {
+    "id": 4,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm assigns CPU time in fixed-length time slices?",
+    "options": [
+      "Round Robin",
+      "First-Come First-Served",
+      "Shortest Job Next",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Round Robin",
+    "explanation": "Round Robin scheduling uses time quanta to ensure fair CPU allocation among ready processes."
+  },
+  {
+    "id": 5,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which algorithm prevents deadlock by simulating resource allocation before granting requests?",
+    "options": [
+      "Banker's Algorithm",
+      "Ostrich Algorithm",
+      "FIFO",
+      "LRU"
+    ],
+    "answer": "Banker's Algorithm",
+    "explanation": "The Banker's Algorithm ensures the system remains in a safe state by checking resource requests against available resources."
+  },
+  {
+    "id": 6,
+    "topic": "Device Driver Implementation",
+    "question": "What component handles hardware interrupts and communicates directly with a device?",
+    "options": [
+      "Interrupt Service Routine (ISR)",
+      "System call handler",
+      "Memory manager",
+      "Scheduler"
+    ],
+    "answer": "Interrupt Service Routine (ISR)",
+    "explanation": "ISRs are low-level routines that respond to hardware interrupts and initiate device communication."
+  },
+  {
+    "id": 7,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism restricts access to system resources based on user identity and permissions?",
+    "options": [
+      "Access Control Lists (ACLs)",
+      "Virtual memory",
+      "Caching",
+      "Paging"
+    ],
+    "answer": "Access Control Lists (ACLs)",
+    "explanation": "ACLs define which users or system processes can access specific objects and what operations they can perform."
+  },
+  {
+    "id": 8,
+    "topic": "System Performance Tuning",
+    "question": "What technique identifies performance bottlenecks by monitoring system resource usage?",
+    "options": [
+      "Profiling",
+      "Fragmentation",
+      "Swapping",
+      "Deadlock detection"
+    ],
+    "answer": "Profiling",
+    "explanation": "Profiling tools collect runtime data to analyze CPU, memory, and I/O usage for performance optimization."
+  },
+  {
+    "id": 9,
+    "topic": "Virtual Memory Management",
+    "question": "What occurs when a program accesses a memory page that is not currently in physical RAM?",
+    "options": [
+      "Page fault",
+      "Segmentation fault",
+      "Cache miss",
+      "Interrupt"
+    ],
+    "answer": "Page fault",
+    "explanation": "A page fault triggers the OS to load the required page from disk into physical memory."
+  },
+  {
+    "id": 10,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC mechanism allows processes to exchange data through a kernel-managed buffer?",
+    "options": [
+      "Message queues",
+      "Shared memory",
+      "Pipes",
+      "Signals"
+    ],
+    "answer": "Message queues",
+    "explanation": "Message queues provide asynchronous communication with kernel-managed buffering and message prioritization."
+  },
+  {
+    "id": 11,
+    "topic": "Process Synchronization",
+    "question": "Which synchronization construct uses condition variables and mutual exclusion locks?",
+    "options": [
+      "Monitor",
+      "Semaphore",
+      "Mutex",
+      "Spinlock"
+    ],
+    "answer": "Monitor",
+    "explanation": "Monitors encapsulate shared data and the procedures that operate on it, ensuring only one process executes at a time."
+  },
+  {
+    "id": 12,
+    "topic": "Memory Optimization",
+    "question": "Which memory management technique divides memory into fixed-size blocks to reduce internal fragmentation?",
+    "options": [
+      "Paging",
+      "Segmentation",
+      "Compaction",
+      "Swapping"
+    ],
+    "answer": "Paging",
+    "explanation": "Paging uses fixed-size pages to map virtual to physical memory, minimizing internal fragmentation."
+  },
+  {
+    "id": 13,
+    "topic": "File System Internals",
+    "question": "What is the primary purpose of a superblock in a Unix file system?",
+    "options": [
+      "Store file system metadata like block size and total blocks",
+      "Hold user file contents",
+      "Manage process scheduling",
+      "Track CPU usage"
+    ],
+    "answer": "Store file system metadata like block size and total blocks",
+    "explanation": "The superblock contains critical file system parameters and structural information."
+  },
+  {
+    "id": 14,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which real-time scheduling algorithm assigns priorities based on task periods?",
+    "options": [
+      "Rate Monotonic Scheduling (RMS)",
+      "Earliest Deadline First (EDF)",
+      "Round Robin",
+      "Multilevel Queue"
+    ],
+    "answer": "Rate Monotonic Scheduling (RMS)",
+    "explanation": "RMS assigns higher priority to tasks with shorter periods, ensuring predictable real-time behavior."
+  },
+  {
+    "id": 15,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What does a cycle in a resource allocation graph indicate in a system with single-instance resources?",
+    "options": [
+      "Deadlock",
+      "Starvation",
+      "Thrashing",
+      "Fragmentation"
+    ],
+    "answer": "Deadlock",
+    "explanation": "In single-instance systems, a cycle in the resource allocation graph implies a deadlock."
+  },
+  {
+    "id": 16,
+    "topic": "Device Driver Implementation",
+    "question": "Which technique allows a device to transfer data directly to memory without CPU intervention?",
+    "options": [
+      "DMA (Direct Memory Access)",
+      "Polling",
+      "Interrupt-driven I/O",
+      "Memory-mapped I/O"
+    ],
+    "answer": "DMA (Direct Memory Access)",
+    "explanation": "DMA enables high-speed data transfer between devices and memory, freeing the CPU for other tasks."
+  },
+  {
+    "id": 17,
+    "topic": "Security Mechanisms",
+    "question": "Which security feature isolates processes to prevent unauthorized access to memory?",
+    "options": [
+      "Memory protection",
+      "File permissions",
+      "User authentication",
+      "Firewall"
+    ],
+    "answer": "Memory protection",
+    "explanation": "Memory protection uses hardware and OS mechanisms to restrict access to memory regions per process."
+  },
+  {
+    "id": 18,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary goal of load balancing in multiprocessor systems?",
+    "options": [
+      "Distribute workload evenly across CPUs",
+      "Minimize disk I/O",
+      "Reduce network latency",
+      "Increase cache size"
+    ],
+    "answer": "Distribute workload evenly across CPUs",
+    "explanation": "Load balancing ensures no single CPU is overwhelmed, improving overall system throughput and responsiveness."
+  },
+  {
+    "id": 19,
+    "topic": "Virtual Memory Management",
+    "question": "Which component speeds up virtual-to-physical address translation by caching page table entries?",
+    "options": [
+      "TLB (Translation Lookaside Buffer)",
+      "Cache memory",
+      "Register file",
+      "Disk buffer"
+    ],
+    "answer": "TLB (Translation Lookaside Buffer)",
+    "explanation": "The TLB is a hardware cache that stores recent virtual-to-physical address mappings for faster access."
+  },
+  {
+    "id": 20,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method provides the fastest communication between processes on the same machine?",
+    "options": [
+      "Shared memory",
+      "Message queues",
+      "Sockets",
+      "Pipes"
+    ],
+    "answer": "Shared memory",
+    "explanation": "Shared memory avoids kernel overhead by allowing processes to access the same memory region directly."
+  },
+  {
+    "id": 21,
+    "topic": "Process Synchronization",
+    "question": "What is a race condition?",
+    "options": [
+      "Unpredictable behavior due to uncontrolled access to shared data",
+      "A deadlock scenario",
+      "CPU overheating",
+      "Memory leak"
+    ],
+    "answer": "Unpredictable behavior due to uncontrolled access to shared data",
+    "explanation": "Race conditions occur when multiple processes access shared data concurrently without synchronization."
+  },
+  {
+    "id": 22,
+    "topic": "Memory Optimization",
+    "question": "What causes internal fragmentation in memory management?",
+    "options": [
+      "Allocating more memory than requested due to fixed block sizes",
+      "Free memory scattered in small blocks",
+      "Page faults",
+      "Cache misses"
+    ],
+    "answer": "Allocating more memory than requested due to fixed block sizes",
+    "explanation": "Internal fragmentation happens when allocated memory blocks are larger than needed, wasting space inside the block."
+  },
+  {
+    "id": 23,
+    "topic": "File System Internals",
+    "question": "Which file system feature ensures data consistency after a crash by logging changes before committing?",
+    "options": [
+      "Journaling",
+      "Caching",
+      "Compression",
+      "Encryption"
+    ],
+    "answer": "Journaling",
+    "explanation": "Journaling records intended changes in a log before writing to disk, allowing recovery after failures."
+  },
+  {
+    "id": 24,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm dynamically adjusts priorities based on process behavior?",
+    "options": [
+      "Multilevel Feedback Queue",
+      "FCFS",
+      "SJF",
+      "RMS"
+    ],
+    "answer": "Multilevel Feedback Queue",
+    "explanation": "Multilevel Feedback Queue promotes I/O-bound processes and demotes CPU-bound ones to optimize responsiveness."
+  },
+  {
+    "id": 25,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which condition is NOT necessary for deadlock to occur?",
+    "options": [
+      "Preemption",
+      "Mutual exclusion",
+      "Hold and wait",
+      "Circular wait"
+    ],
+    "answer": "Preemption",
+    "explanation": "The four Coffman conditions are mutual exclusion, hold and wait, no preemption, and circular wait. Preemption breaks one of these."
+  },
+  {
+    "id": 26,
+    "topic": "Device Driver Implementation",
+    "question": "What is the role of the Hardware Abstraction Layer (HAL) in device drivers?",
+    "options": [
+      "Provide a uniform interface to hardware regardless of platform",
+      "Manage user authentication",
+      "Schedule processes",
+      "Handle file system operations"
+    ],
+    "answer": "Provide a uniform interface to hardware regardless of platform",
+    "explanation": "The HAL isolates OS kernel code from hardware specifics, enabling portability across different devices."
+  },
+  {
+    "id": 27,
+    "topic": "Security Mechanisms",
+    "question": "Which technique ensures that code cannot be executed from data memory regions?",
+    "options": [
+      "Data Execution Prevention (DEP)",
+      "Address Space Layout Randomization (ASLR)",
+      "Sandboxing",
+      "Encryption"
+    ],
+    "answer": "Data Execution Prevention (DEP)",
+    "explanation": "DEP marks memory pages as non-executable, preventing buffer overflow exploits from running injected code."
+  },
+  {
+    "id": 28,
+    "topic": "System Performance Tuning",
+    "question": "What metric measures the time taken to complete a single task?",
+    "options": [
+      "Latency",
+      "Throughput",
+      "Bandwidth",
+      "Utilization"
+    ],
+    "answer": "Latency",
+    "explanation": "Latency is the delay between request and response, critical in real-time and interactive systems."
+  },
+  {
+    "id": 29,
+    "topic": "Virtual Memory Management",
+    "question": "What is thrashing?",
+    "options": [
+      "Excessive page faults causing low CPU utilization",
+      "Memory leak",
+      "Disk fragmentation",
+      "CPU overheating"
+    ],
+    "answer": "Excessive page faults causing low CPU utilization",
+    "explanation": "Thrashing occurs when the system spends more time swapping pages than executing useful work."
+  },
+  {
+    "id": 30,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC mechanism is typically used for communication between parent and child processes?",
+    "options": [
+      "Pipes",
+      "Shared memory",
+      "Message queues",
+      "Sockets"
+    ],
+    "answer": "Pipes",
+    "explanation": "Pipes provide a simple, unidirectional data channel commonly used in parent-child process communication."
+  },
+  {
+    "id": 31,
+    "topic": "Process Synchronization",
+    "question": "Which primitive provides mutual exclusion with ownership and is typically used within a single process?",
+    "options": [
+      "Mutex",
+      "Semaphore",
+      "Monitor",
+      "Spinlock"
+    ],
+    "answer": "Mutex",
+    "explanation": "A mutex is a locking mechanism that ensures only one thread can access a resource at a time, with ownership semantics."
+  },
+  {
+    "id": 32,
+    "topic": "Memory Optimization",
+    "question": "Which technique uses a pool of pre-allocated fixed-size memory blocks to reduce allocation overhead?",
+    "options": [
+      "Memory pooling",
+      "Garbage collection",
+      "Swapping",
+      "Caching"
+    ],
+    "answer": "Memory pooling",
+    "explanation": "Memory pools improve performance in real-time systems by eliminating dynamic allocation delays."
+  },
+  {
+    "id": 33,
+    "topic": "File System Internals",
+    "question": "What is an extent in file system design?",
+    "options": [
+      "A contiguous block of disk storage allocated to a file",
+      "A type of semaphore",
+      "A CPU register",
+      "A network protocol"
+    ],
+    "answer": "A contiguous block of disk storage allocated to a file",
+    "explanation": "Extents reduce fragmentation and metadata overhead by representing large contiguous file regions."
+  },
+  {
+    "id": 34,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "In Earliest Deadline First (EDF) scheduling, which task is executed next?",
+    "options": [
+      "The one with the earliest deadline",
+      "The one with the shortest burst time",
+      "The one that arrived first",
+      "The one with the highest priority"
+    ],
+    "answer": "The one with the earliest deadline",
+    "explanation": "EDF is an optimal dynamic-priority scheduling algorithm for real-time systems."
+  },
+  {
+    "id": 35,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the 'Ostrich Algorithm' in deadlock handling?",
+    "options": [
+      "Ignoring the problem and assuming it won't occur",
+      "Using Banker's Algorithm",
+      "Killing all processes",
+      "Rebooting the system"
+    ],
+    "answer": "Ignoring the problem and assuming it won't occur",
+    "explanation": "The Ostrich Algorithm is used in systems where deadlocks are rare and the cost of prevention is too high."
+  },
+  {
+    "id": 36,
+    "topic": "Device Driver Implementation",
+    "question": "What is polling in device driver context?",
+    "options": [
+      "Continuously checking device status registers",
+      "Waiting for an interrupt",
+      "Using DMA",
+      "Reading from a log file"
+    ],
+    "answer": "Continuously checking device status registers",
+    "explanation": "Polling wastes CPU cycles but is simple and useful for high-frequency or low-latency devices."
+  },
+  {
+    "id": 37,
+    "topic": "Security Mechanisms",
+    "question": "What does ASLR (Address Space Layout Randomization) protect against?",
+    "options": [
+      "Buffer overflow exploits",
+      "DDoS attacks",
+      "Phishing",
+      "Malware installation"
+    ],
+    "answer": "Buffer overflow exploits",
+    "explanation": "ASLR randomizes memory addresses of key data areas, making it harder for attackers to predict target locations."
+  },
+  {
+    "id": 38,
+    "topic": "System Performance Tuning",
+    "question": "What does high system 'throughput' indicate?",
+    "options": [
+      "Large number of tasks completed per unit time",
+      "Low latency per task",
+      "High CPU temperature",
+      "Frequent page faults"
+    ],
+    "answer": "Large number of tasks completed per unit time",
+    "explanation": "Throughput measures overall system efficiency in processing work over time."
+  },
+  {
+    "id": 39,
+    "topic": "Virtual Memory Management",
+    "question": "Which page replacement algorithm replaces the page that will not be used for the longest time in the future?",
+    "options": [
+      "Optimal",
+      "FIFO",
+      "LRU",
+      "Clock"
+    ],
+    "answer": "Optimal",
+    "explanation": "The Optimal algorithm is theoretical and used as a benchmark; it requires knowledge of future memory accesses."
+  },
+  {
+    "id": 40,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method supports communication between processes on different machines?",
+    "options": [
+      "Sockets",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Sockets",
+    "explanation": "Sockets enable network-based IPC and are the foundation of client-server communication."
+  },
+  {
+    "id": 41,
+    "topic": "Process Synchronization",
+    "question": "What is the primary purpose of a critical section in concurrent programming?",
+    "options": [
+      "To protect shared data from concurrent access",
+      "To increase CPU utilization",
+      "To reduce memory usage",
+      "To speed up I/O operations"
+    ],
+    "answer": "To protect shared data from concurrent access",
+    "explanation": "A critical section is a code segment that accesses shared resources and must not be concurrently executed by multiple threads."
+  },
+  {
+    "id": 42,
+    "topic": "Memory Optimization",
+    "question": "Which technique avoids external fragmentation by using non-contiguous memory allocation?",
+    "options": [
+      "Paging",
+      "Segmentation",
+      "Compaction",
+      "Swapping"
+    ],
+    "answer": "Paging",
+    "explanation": "Paging allows processes to be stored in non-contiguous physical memory frames, eliminating external fragmentation."
+  },
+  {
+    "id": 43,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of using a journaling file system?",
+    "options": [
+      "Faster recovery after system crashes",
+      "Higher disk throughput",
+      "Lower memory usage",
+      "Better CPU scheduling"
+    ],
+    "answer": "Faster recovery after system crashes",
+    "explanation": "Journaling records changes in a log before committing them, enabling quick rollback or replay after a crash."
+  },
+  {
+    "id": 44,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is most suitable for real-time systems with strict deadlines?",
+    "options": [
+      "Earliest Deadline First (EDF)",
+      "Round Robin",
+      "First-Come First-Served",
+      "Shortest Job First"
+    ],
+    "answer": "Earliest Deadline First (EDF)",
+    "explanation": "EDF schedules the task with the nearest deadline next, making it optimal for real-time systems."
+  },
+  {
+    "id": 45,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a deadlock prevention strategy?",
+    "options": [
+      "Require processes to request all resources at once",
+      "Use Banker's Algorithm",
+      "Detect cycles in resource graphs",
+      "Ignore deadlocks"
+    ],
+    "answer": "Require processes to request all resources at once",
+    "explanation": "This strategy breaks the 'hold and wait' condition, preventing deadlock from occurring."
+  },
+  {
+    "id": 46,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main disadvantage of polling in device drivers?",
+    "options": [
+      "Wastes CPU cycles",
+      "Causes memory leaks",
+      "Increases latency",
+      "Reduces throughput"
+    ],
+    "answer": "Wastes CPU cycles",
+    "explanation": "Polling keeps the CPU busy checking device status, even when no data is available."
+  },
+  {
+    "id": 47,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents unauthorized modification of system files?",
+    "options": [
+      "File integrity checking",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "File integrity checking",
+    "explanation": "File integrity tools monitor and alert on unauthorized changes to critical system files."
+  },
+  {
+    "id": 48,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary cause of high system latency?",
+    "options": [
+      "Resource contention and queuing delays",
+      "Excessive caching",
+      "Too many CPU cores",
+      "Large page sizes"
+    ],
+    "answer": "Resource contention and queuing delays",
+    "explanation": "Latency increases when processes wait for shared resources like CPU, disk, or network."
+  },
+  {
+    "id": 49,
+    "topic": "Virtual Memory Management",
+    "question": "What is the purpose of a page table in virtual memory systems?",
+    "options": [
+      "Map virtual addresses to physical addresses",
+      "Store file metadata",
+      "Manage process priorities",
+      "Handle device interrupts"
+    ],
+    "answer": "Map virtual addresses to physical addresses",
+    "explanation": "The page table is used by the MMU to translate virtual addresses generated by a process into physical RAM addresses."
+  },
+  {
+    "id": 50,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC mechanism guarantees message ordering and delivery?",
+    "options": [
+      "Message queues",
+      "Shared memory",
+      "Signals",
+      "Pipes (unidirectional)"
+    ],
+    "answer": "Message queues",
+    "explanation": "Message queues provide reliable, ordered message delivery with kernel-managed buffering."
+  },
+  {
+    "id": 51,
+    "topic": "Process Synchronization",
+    "question": "Which problem arises when two processes wait indefinitely for each other to release resources?",
+    "options": [
+      "Deadlock",
+      "Race condition",
+      "Thrashing",
+      "Starvation"
+    ],
+    "answer": "Deadlock",
+    "explanation": "Deadlock occurs when processes are stuck in a circular wait for resources held by each other."
+  },
+  {
+    "id": 52,
+    "topic": "Memory Optimization",
+    "question": "What is memory pooling primarily used for in real-time systems?",
+    "options": [
+      "To eliminate dynamic allocation delays",
+      "To increase disk space",
+      "To reduce CPU usage",
+      "To improve network speed"
+    ],
+    "answer": "To eliminate dynamic allocation delays",
+    "explanation": "Memory pools pre-allocate fixed-size blocks, avoiding the unpredictability of runtime allocation."
+  },
+  {
+    "id": 53,
+    "topic": "File System Internals",
+    "question": "Which file system structure keeps track of free disk blocks?",
+    "options": [
+      "Bitmap or free list",
+      "Inode table",
+      "Superblock",
+      "Page table"
+    ],
+    "answer": "Bitmap or free list",
+    "explanation": "The free space manager uses a bitmap or linked list to track which disk blocks are available for allocation."
+  },
+  {
+    "id": 54,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "What is the main drawback of the First-Come, First-Served (FCFS) scheduling algorithm?",
+    "options": [
+      "Convoy effect leading to poor average wait time",
+      "High overhead",
+      "Unfair to short jobs",
+      "Not preemptive"
+    ],
+    "answer": "Convoy effect leading to poor average wait time",
+    "explanation": "Long processes hold the CPU, causing short processes to wait unnecessarily long."
+  },
+  {
+    "id": 55,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which graph is used to detect deadlocks in systems with multiple resource instances?",
+    "options": [
+      "Wait-for graph",
+      "Resource allocation graph",
+      "Process dependency graph",
+      "State transition graph"
+    ],
+    "answer": "Wait-for graph",
+    "explanation": "The wait-for graph abstracts the resource allocation graph to show direct process-to-process waits."
+  },
+  {
+    "id": 56,
+    "topic": "Device Driver Implementation",
+    "question": "What is the role of a device driver in an operating system?",
+    "options": [
+      "Act as an interface between OS and hardware",
+      "Manage user accounts",
+      "Schedule CPU tasks",
+      "Allocate virtual memory"
+    ],
+    "answer": "Act as an interface between OS and hardware",
+    "explanation": "Device drivers translate generic OS commands into hardware-specific instructions."
+  },
+  {
+    "id": 57,
+    "topic": "Security Mechanisms",
+    "question": "Which technique randomizes the memory layout of a process to thwart exploitation?",
+    "options": [
+      "ASLR (Address Space Layout Randomization)",
+      "DEP (Data Execution Prevention)",
+      "Sandboxing",
+      "Encryption"
+    ],
+    "answer": "ASLR (Address Space Layout Randomization)",
+    "explanation": "ASLR makes it difficult for attackers to predict memory addresses of key functions or variables."
+  },
+  {
+    "id": 58,
+    "topic": "System Performance Tuning",
+    "question": "What does a high cache miss rate typically indicate?",
+    "options": [
+      "Poor locality of reference in program behavior",
+      "Excessive CPU speed",
+      "Too much RAM",
+      "Inefficient scheduling"
+    ],
+    "answer": "Poor locality of reference in program behavior",
+    "explanation": "Programs that jump around in memory cause frequent cache misses, slowing execution."
+  },
+  {
+    "id": 59,
+    "topic": "Virtual Memory Management",
+    "question": "Which component handles page faults in an operating system?",
+    "options": [
+      "Memory Management Unit (MMU) and OS handler",
+      "CPU scheduler",
+      "File system driver",
+      "Device controller"
+    ],
+    "answer": "Memory Management Unit (MMU) and OS handler",
+    "explanation": "The MMU detects the fault, and the OS loads the required page from disk into RAM."
+  },
+  {
+    "id": 60,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "What is a key limitation of shared memory IPC?",
+    "options": [
+      "Requires explicit synchronization to avoid race conditions",
+      "Only works over networks",
+      "High kernel overhead",
+      "Messages are unordered"
+    ],
+    "answer": "Requires explicit synchronization to avoid race conditions",
+    "explanation": "Since shared memory offers no built-in coordination, processes must use semaphores or mutexes."
+  },
+  {
+    "id": 61,
+    "topic": "Process Synchronization",
+    "question": "Which of the following is NOT a requirement for a critical section solution?",
+    "options": [
+      "Atomicity",
+      "Mutual exclusion",
+      "Progress",
+      "Bounded waiting"
+    ],
+    "answer": "Atomicity",
+    "explanation": "While mutual exclusion, progress, and bounded waiting are required, atomicity is a hardware property, not a solution requirement."
+  },
+  {
+    "id": 62,
+    "topic": "Memory Optimization",
+    "question": "What is the main benefit of using slab allocation for kernel objects?",
+    "options": [
+      "Reduces fragmentation and allocation overhead",
+      "Increases disk I/O speed",
+      "Improves CPU scheduling",
+      "Enhances security"
+    ],
+    "answer": "Reduces fragmentation and allocation overhead",
+    "explanation": "Slab allocation caches pre-initialized objects of the same type for fast reuse."
+  },
+  {
+    "id": 63,
+    "topic": "File System Internals",
+    "question": "What is metadata in the context of file systems?",
+    "options": [
+      "Data about a file, such as name, size, and permissions",
+      "The actual content of the file",
+      "CPU usage statistics",
+      "Network configuration"
+    ],
+    "answer": "Data about a file, such as name, size, and permissions",
+    "explanation": "Metadata describes file attributes and is stored separately from file data."
+  },
+  {
+    "id": 64,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is preemptive and based on priority?",
+    "options": [
+      "Priority Scheduling",
+      "FCFS",
+      "SJF",
+      "Multilevel Queue (non-preemptive)"
+    ],
+    "answer": "Priority Scheduling",
+    "explanation": "In preemptive priority scheduling, a higher-priority process can interrupt a lower-priority one."
+  },
+  {
+    "id": 65,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main limitation of the Banker's Algorithm?",
+    "options": [
+      "Requires a priori knowledge of maximum resource needs",
+      "Only works with single-instance resources",
+      "Cannot prevent deadlock",
+      "High CPU overhead"
+    ],
+    "answer": "Requires a priori knowledge of maximum resource needs",
+    "explanation": "Processes must declare their maximum resource requirements in advance, which is often impractical."
+  },
+  {
+    "id": 66,
+    "topic": "Device Driver Implementation",
+    "question": "What is the purpose of buffering in device drivers?",
+    "options": [
+      "To handle speed mismatch between CPU and device",
+      "To reduce memory usage",
+      "To encrypt data",
+      "To compress files"
+    ],
+    "answer": "To handle speed mismatch between CPU and device",
+    "explanation": "Buffers temporarily store data during transfers between fast CPUs and slower I/O devices."
+  },
+  {
+    "id": 67,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism restricts a process to a limited set of system resources?",
+    "options": [
+      "Sandboxing",
+      "Paging",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "Sandboxing",
+    "explanation": "Sandboxing isolates untrusted programs to prevent system-wide damage."
+  },
+  {
+    "id": 68,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary goal of CPU affinity in scheduling?",
+    "options": [
+      "Improve cache performance by keeping processes on the same CPU",
+      "Balance load across all CPUs",
+      "Reduce memory usage",
+      "Increase disk throughput"
+    ],
+    "answer": "Improve cache performance by keeping processes on the same CPU",
+    "explanation": "CPU affinity leverages cache warmth by minimizing process migration between cores."
+  },
+  {
+    "id": 69,
+    "topic": "Virtual Memory Management",
+    "question": "What is demand paging?",
+    "options": [
+      "Loading pages into memory only when accessed",
+      "Preloading all pages at process start",
+      "Swapping entire processes",
+      "Using fixed-size memory blocks"
+    ],
+    "answer": "Loading pages into memory only when accessed",
+    "explanation": "Demand paging improves memory efficiency by loading pages on first reference, not in advance."
+  },
+  {
+    "id": 70,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is connection-oriented and reliable?",
+    "options": [
+      "TCP sockets",
+      "UDP sockets",
+      "Shared memory",
+      "Signals"
+    ],
+    "answer": "TCP sockets",
+    "explanation": "TCP provides reliable, ordered, connection-based communication between processes, even across networks."
+  },
+  {
+    "id": 71,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of Peterson's algorithm?",
+    "options": [
+      "Provide mutual exclusion for two processes using only shared memory",
+      "Detect deadlocks",
+      "Schedule CPU time",
+      "Manage virtual memory"
+    ],
+    "answer": "Provide mutual exclusion for two processes using only shared memory",
+    "explanation": "Peterson's algorithm is a software-based solution for mutual exclusion without special hardware instructions."
+  },
+  {
+    "id": 72,
+    "topic": "Memory Optimization",
+    "question": "Which memory allocation strategy searches for the smallest free block that fits the request?",
+    "options": [
+      "Best fit",
+      "First fit",
+      "Worst fit",
+      "Next fit"
+    ],
+    "answer": "Best fit",
+    "explanation": "Best fit minimizes wasted space per allocation but can increase external fragmentation over time."
+  },
+  {
+    "id": 73,
+    "topic": "File System Internals",
+    "question": "What is the purpose of a directory entry in a file system?",
+    "options": [
+      "Map file name to its inode or metadata structure",
+      "Store file content",
+      "Track CPU usage",
+      "Manage device drivers"
+    ],
+    "answer": "Map file name to its inode or metadata structure",
+    "explanation": "Directory entries link human-readable names to the system's internal file representation."
+  },
+  {
+    "id": 74,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm uses multiple queues with different priorities and time quanta?",
+    "options": [
+      "Multilevel Feedback Queue",
+      "Round Robin",
+      "SJF",
+      "FCFS"
+    ],
+    "answer": "Multilevel Feedback Queue",
+    "explanation": "This algorithm promotes I/O-bound jobs to higher queues and demotes CPU hogs to lower ones."
+  },
+  {
+    "id": 75,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a deadlock recovery strategy?",
+    "options": [
+      "Process termination or resource preemption",
+      "Using semaphores",
+      "Increasing RAM",
+      "Disabling interrupts"
+    ],
+    "answer": "Process termination or resource preemption",
+    "explanation": "Once deadlock is detected, the system may kill processes or forcibly take resources to break the cycle."
+  },
+  {
+    "id": 76,
+    "topic": "Device Driver Implementation",
+    "question": "What is the difference between a character device and a block device?",
+    "options": [
+      "Character devices handle data as a stream; block devices use fixed-size blocks",
+      "Block devices are faster",
+      "Character devices use DMA",
+      "Block devices don't need drivers"
+    ],
+    "answer": "Character devices handle data as a stream; block devices use fixed-size blocks",
+    "explanation": "Examples: keyboard (character) vs. disk (block)."
+  },
+  {
+    "id": 77,
+    "topic": "Security Mechanisms",
+    "question": "Which hardware feature supports secure boot by verifying OS integrity?",
+    "options": [
+      "Trusted Platform Module (TPM)",
+      "MMU",
+      "DMA controller",
+      "CPU cache"
+    ],
+    "answer": "Trusted Platform Module (TPM)",
+    "explanation": "TPM stores cryptographic keys and measurements to ensure only trusted software runs during boot."
+  },
+  {
+    "id": 78,
+    "topic": "System Performance Tuning",
+    "question": "What is the effect of increasing the time quantum in Round Robin scheduling?",
+    "options": [
+      "Reduces context switch overhead but may increase response time",
+      "Always improves fairness",
+      "Decreases throughput",
+      "Eliminates starvation"
+    ],
+    "answer": "Reduces context switch overhead but may increase response time",
+    "explanation": "Larger quanta reduce switching costs but make the system less responsive to short tasks."
+  },
+  {
+    "id": 79,
+    "topic": "Virtual Memory Management",
+    "question": "What is the working set model used for?",
+    "options": [
+      "Estimate the set of pages a process is actively using",
+      "Detect deadlocks",
+      "Schedule CPU time",
+      "Manage file permissions"
+    ],
+    "answer": "Estimate the set of pages a process is actively using",
+    "explanation": "The working set helps the OS decide which pages to keep in memory to avoid thrashing."
+  },
+  {
+    "id": 80,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC mechanism is asynchronous and signal-based?",
+    "options": [
+      "Signals",
+      "Pipes",
+      "Message queues",
+      "Shared memory"
+    ],
+    "answer": "Signals",
+    "explanation": "Signals notify processes of events asynchronously, such as termination requests or errors."
+  },
+  {
+    "id": 81,
+    "topic": "Process Synchronization",
+    "question": "What is a spinlock?",
+    "options": [
+      "A lock where a thread waits in a loop until the lock is free",
+      "A type of semaphore",
+      "A file system lock",
+      "A network protocol"
+    ],
+    "answer": "A lock where a thread waits in a loop until the lock is free",
+    "explanation": "Spinlocks are efficient for very short critical sections on multiprocessor systems."
+  },
+  {
+    "id": 82,
+    "topic": "Memory Optimization",
+    "question": "What is external fragmentation?",
+    "options": [
+      "Free memory exists but is scattered in small, non-contiguous blocks",
+      "Memory allocated is larger than requested",
+      "Page faults occur frequently",
+      "Cache misses are high"
+    ],
+    "answer": "Free memory exists but is scattered in small, non-contiguous blocks",
+    "explanation": "External fragmentation prevents allocation of large contiguous blocks despite sufficient total free memory."
+  },
+  {
+    "id": 83,
+    "topic": "File System Internals",
+    "question": "Which file system uses a table (FAT) to link file blocks?",
+    "options": [
+      "FAT32",
+      "ext4",
+      "NTFS",
+      "XFS"
+    ],
+    "answer": "FAT32",
+    "explanation": "The File Allocation Table (FAT) keeps a linked list of clusters for each file."
+  },
+  {
+    "id": 84,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "What is the convoy effect?",
+    "options": [
+      "Short processes wait behind a long-running process in FCFS",
+      "CPU overheats due to high load",
+      "Memory thrashing occurs",
+      "Disk I/O blocks CPU"
+    ],
+    "answer": "Short processes wait behind a long-running process in FCFS",
+    "explanation": "This leads to poor average waiting time and underutilization of I/O devices."
+  },
+  {
+    "id": 85,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which condition must be removed to prevent deadlock?",
+    "options": [
+      "Any one of the four Coffman conditions",
+      "Only mutual exclusion",
+      "Only circular wait",
+      "Only hold and wait"
+    ],
+    "answer": "Any one of the four Coffman conditions",
+    "explanation": "Removing mutual exclusion, hold and wait, no preemption, or circular wait prevents deadlock."
+  },
+  {
+    "id": 86,
+    "topic": "Device Driver Implementation",
+    "question": "What is the purpose of an interrupt handler in a device driver?",
+    "options": [
+      "Respond to hardware interrupts and initiate data transfer",
+      "Allocate memory",
+      "Schedule processes",
+      "Manage file systems"
+    ],
+    "answer": "Respond to hardware interrupts and initiate data transfer",
+    "explanation": "Interrupt handlers allow devices to signal the CPU when they need attention."
+  },
+  {
+    "id": 87,
+    "topic": "Security Mechanisms",
+    "question": "Which access control model uses roles to assign permissions?",
+    "options": [
+      "Role-Based Access Control (RBAC)",
+      "Mandatory Access Control (MAC)",
+      "Discretionary Access Control (DAC)",
+      "Attribute-Based Access Control (ABAC)"
+    ],
+    "answer": "Role-Based Access Control (RBAC)",
+    "explanation": "RBAC assigns permissions to roles, and users are assigned to roles based on job functions."
+  },
+  {
+    "id": 88,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of the 'top' or 'htop' command in Unix-like systems?",
+    "options": [
+      "Monitor real-time CPU, memory, and process activity",
+      "Edit text files",
+      "Compile programs",
+      "Manage disk partitions"
+    ],
+    "answer": "Monitor real-time CPU, memory, and process activity",
+    "explanation": "These tools help identify performance bottlenecks and resource-hungry processes."
+  },
+  {
+    "id": 89,
+    "topic": "Virtual Memory Management",
+    "question": "Which page replacement algorithm approximates LRU using reference bits?",
+    "options": [
+      "Second-Chance (Clock) algorithm",
+      "FIFO",
+      "Optimal",
+      "Random"
+    ],
+    "answer": "Second-Chance (Clock) algorithm",
+    "explanation": "The Clock algorithm uses a circular buffer and reference bits to give pages a 'second chance' before replacement."
+  },
+  {
+    "id": 90,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "What is a named pipe (FIFO)?",
+    "options": [
+      "A persistent pipe with a filesystem path for unrelated processes",
+      "A kernel buffer for message queues",
+      "A shared memory segment",
+      "A network socket"
+    ],
+    "answer": "A persistent pipe with a filesystem path for unrelated processes",
+    "explanation": "Unlike anonymous pipes, FIFOs allow communication between unrelated processes via a special file."
+  },
+  {
+    "id": 91,
+    "topic": "Process Synchronization",
+    "question": "Which of the following ensures bounded waiting in a critical section solution?",
+    "options": [
+      "There is a limit on how long a process may wait to enter its critical section",
+      "Only one process runs at a time",
+      "All processes run in FIFO order",
+      "No process is ever blocked"
+    ],
+    "answer": "There is a limit on how long a process may wait to enter its critical section",
+    "explanation": "Bounded waiting prevents starvation by guaranteeing eventual access to the critical section."
+  },
+  {
+    "id": 92,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of segmentation over paging?",
+    "options": [
+      "Supports logical division of programs (code, data, stack)",
+      "Eliminates all fragmentation",
+      "Faster address translation",
+      "Simpler hardware support"
+    ],
+    "answer": "Supports logical division of programs (code, data, stack)",
+    "explanation": "Segmentation reflects the natural structure of programs, aiding protection and sharing."
+  },
+  {
+    "id": 93,
+    "topic": "File System Internals",
+    "question": "What is the main disadvantage of the FAT file system?",
+    "options": [
+      "Inefficient for large disks due to linear traversal",
+      "No support for directories",
+      "Cannot store text files",
+      "Requires journaling"
+    ],
+    "answer": "Inefficient for large disks due to linear traversal",
+    "explanation": "FAT must traverse the entire chain of clusters to access the end of a large file."
+  },
+  {
+    "id": 94,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which algorithm minimizes average waiting time but is impractical because it requires future knowledge?",
+    "options": [
+      "Shortest Job First (SJF)",
+      "Round Robin",
+      "FCFS",
+      "Priority Scheduling"
+    ],
+    "answer": "Shortest Job First (SJF)",
+    "explanation": "SJF is optimal for minimizing wait time but cannot be implemented perfectly without knowing burst times in advance."
+  },
+  {
+    "id": 95,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "In a resource allocation graph, what does a directed edge from a process to a resource indicate?",
+    "options": [
+      "The process is requesting the resource",
+      "The process is holding the resource",
+      "The resource is free",
+      "The process has released the resource"
+    ],
+    "answer": "The process is requesting the resource",
+    "explanation": "Request edges point from process to resource; assignment edges point from resource to process."
+  },
+  {
+    "id": 96,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of a device controller?",
+    "options": [
+      "Interface between device driver and physical hardware",
+      "Schedule CPU tasks",
+      "Manage virtual memory",
+      "Handle user authentication"
+    ],
+    "answer": "Interface between device driver and physical hardware",
+    "explanation": "The controller translates high-level commands into low-level hardware signals."
+  },
+  {
+    "id": 97,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a program cannot access memory outside its allocated space?",
+    "options": [
+      "Memory protection via MMU",
+      "File permissions",
+      "User passwords",
+      "Firewall rules"
+    ],
+    "answer": "Memory protection via MMU",
+    "explanation": "The Memory Management Unit enforces access permissions using page table entries."
+  },
+  {
+    "id": 98,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary cause of 'thrashing' in a virtual memory system?",
+    "options": [
+      "Too many processes competing for too few memory frames",
+      "Slow disk I/O",
+      "High CPU temperature",
+      "Network congestion"
+    ],
+    "answer": "Too many processes competing for too few memory frames",
+    "explanation": "Thrashing occurs when the system spends more time paging than executing useful work."
+  },
+  {
+    "id": 99,
+    "topic": "Virtual Memory Management",
+    "question": "What is the purpose of the 'dirty bit' in a page table entry?",
+    "options": [
+      "Indicate that the page has been modified and needs to be written back to disk",
+      "Mark the page as read-only",
+      "Signal a page fault",
+      "Enable caching"
+    ],
+    "answer": "Indicate that the page has been modified and needs to be written back to disk",
+    "explanation": "The dirty bit optimizes swapping by avoiding unnecessary writes of unmodified pages."
+  },
+  {
+    "id": 100,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is best suited for high-frequency, low-latency communication on the same machine?",
+    "options": [
+      "Shared memory",
+      "Message queues",
+      "Sockets",
+      "Pipes"
+    ],
+    "answer": "Shared memory",
+    "explanation": "Shared memory has the lowest overhead since it avoids kernel copying and system calls after setup."
+  },
+  {
+    "id": 101,
+    "topic": "Process Synchronization",
+    "question": "What is the main drawback of using test-and-set instructions for mutual exclusion?",
+    "options": [
+      "It causes busy waiting, wasting CPU cycles",
+      "It requires special hardware",
+      "It doesn't ensure mutual exclusion",
+      "It only works on single-core systems"
+    ],
+    "answer": "It causes busy waiting, wasting CPU cycles",
+    "explanation": "Test-and-set locks spin until the lock is free, consuming CPU time that could be used elsewhere."
+  },
+  {
+    "id": 102,
+    "topic": "Memory Optimization",
+    "question": "Which technique combines the benefits of paging and segmentation?",
+    "options": [
+      "Segmented paging",
+      "Memory compaction",
+      "Swapping",
+      "Caching"
+    ],
+    "answer": "Segmented paging",
+    "explanation": "Segmented paging uses segments for logical organization and pages for physical memory management."
+  },
+  {
+    "id": 103,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of extent-based file allocation?",
+    "options": [
+      "Reduces metadata overhead for large files",
+      "Eliminates all fragmentation",
+      "Speeds up small file access",
+      "Improves security"
+    ],
+    "answer": "Reduces metadata overhead for large files",
+    "explanation": "Instead of storing thousands of block pointers, an extent stores a start block and length."
+  },
+  {
+    "id": 104,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in the Linux Completely Fair Scheduler (CFS)?",
+    "options": [
+      "Red-black tree based fair scheduling",
+      "Round Robin",
+      "Multilevel Feedback Queue",
+      "EDF"
+    ],
+    "answer": "Red-black tree based fair scheduling",
+    "explanation": "CFS uses a red-black tree to track process virtual runtimes and select the 'most deserving' task."
+  },
+  {
+    "id": 105,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is a safe state in the context of the Banker's Algorithm?",
+    "options": [
+      "A state where the system can allocate resources and still avoid deadlock",
+      "A state with no processes running",
+      "A state where all resources are free",
+      "A state after deadlock has been resolved"
+    ],
+    "answer": "A state where the system can allocate resources and still avoid deadlock",
+    "explanation": "A safe state guarantees that all processes can complete even in the worst-case scenario."
+  },
+  {
+    "id": 106,
+    "topic": "Device Driver Implementation",
+    "question": "What is the purpose of a major and minor number in Unix device files?",
+    "options": [
+      "Major identifies the driver; minor identifies the specific device instance",
+      "Major is the device speed; minor is the buffer size",
+      "Major is the vendor ID; minor is the product ID",
+      "Major is CPU core; minor is memory size"
+    ],
+    "answer": "Major identifies the driver; minor identifies the specific device instance",
+    "explanation": "The kernel uses the major number to route requests to the correct driver."
+  },
+  {
+    "id": 107,
+    "topic": "Security Mechanisms",
+    "question": "Which Linux security module enforces mandatory access control policies?",
+    "options": [
+      "SELinux",
+      "iptables",
+      "AppArmor",
+      "Both SELinux and AppArmor"
+    ],
+    "answer": "Both SELinux and AppArmor",
+    "explanation": "Both are Linux security modules that implement MAC, though with different policy models."
+  },
+  {
+    "id": 108,
+    "topic": "System Performance Tuning",
+    "question": "What does the 'load average' metric represent in Unix systems?",
+    "options": [
+      "Average number of processes in runnable or uninterruptible states",
+      "CPU utilization percentage",
+      "Memory usage over time",
+      "Disk I/O operations per second"
+    ],
+    "answer": "Average number of processes in runnable or uninterruptible states",
+    "explanation": "Load average includes processes waiting for CPU and those waiting for I/O (e.g., disk)."
+  },
+  {
+    "id": 109,
+    "topic": "Virtual Memory Management",
+    "question": "What is copy-on-write (COW) used for?",
+    "options": [
+      "Optimize fork() by sharing pages until one process writes",
+      "Encrypt memory pages",
+      "Compress virtual memory",
+      "Detect memory leaks"
+    ],
+    "answer": "Optimize fork() by sharing pages until one process writes",
+    "explanation": "COW delays copying of process memory until modification, saving time and memory."
+  },
+  {
+    "id": 110,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC mechanism is used by the X Window System for client-server communication?",
+    "options": [
+      "Unix domain sockets",
+      "Shared memory",
+      "Message queues",
+      "Pipes"
+    ],
+    "answer": "Unix domain sockets",
+    "explanation": "Unix domain sockets provide efficient, secure communication between processes on the same host."
+  },
+  {
+    "id": 111,
+    "topic": "Process Synchronization",
+    "question": "What is the readers-writers problem?",
+    "options": [
+      "Allow multiple readers or one writer to access shared data",
+      "Ensure all processes read before writing",
+      "Prevent any reading during writing",
+      "Balance CPU and I/O usage"
+    ],
+    "answer": "Allow multiple readers or one writer to access shared data",
+    "explanation": "The problem requires synchronization that permits concurrent reads but exclusive writes."
+  },
+  {
+    "id": 112,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of a memory allocator like malloc()?",
+    "options": [
+      "Manage dynamic memory allocation from the heap",
+      "Schedule CPU time",
+      "Handle file I/O",
+      "Implement virtual memory"
+    ],
+    "answer": "Manage dynamic memory allocation from the heap",
+    "explanation": "Malloc() provides a user-level interface to request and release variable-sized memory blocks."
+  },
+  {
+    "id": 113,
+    "topic": "File System Internals",
+    "question": "What is the purpose of the 'dentry' cache in Linux?",
+    "options": [
+      "Cache directory entry lookups to speed up path resolution",
+      "Store file content",
+      "Manage page tables",
+      "Handle device interrupts"
+    ],
+    "answer": "Cache directory entry lookups to speed up path resolution",
+    "explanation": "The dentry cache reduces the need to traverse disk-based directories for common paths."
+  },
+  {
+    "id": 114,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "What is the main advantage of multilevel queue scheduling?",
+    "options": [
+      "Different scheduling algorithms can be used for different process types",
+      "It guarantees shortest job first",
+      "It eliminates context switching",
+      "It prevents all deadlocks"
+    ],
+    "answer": "Different scheduling algorithms can be used for different process types",
+    "explanation": "For example, interactive processes may use Round Robin, while batch jobs use FCFS."
+  },
+  {
+    "id": 115,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which deadlock handling strategy is used by most general-purpose operating systems?",
+    "options": [
+      "Ostrich algorithm (ignore)",
+      "Prevention",
+      "Avoidance",
+      "Detection and recovery"
+    ],
+    "answer": "Ostrich algorithm (ignore)",
+    "explanation": "Deadlocks are considered rare, and the cost of prevention/avoidance is often deemed too high."
+  },
+  {
+    "id": 116,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main advantage of writing a kernel module for a device driver?",
+    "options": [
+      "Can be loaded and unloaded without rebooting the system",
+      "Runs in user space for safety",
+      "Requires no hardware knowledge",
+      "Automatically supports all devices"
+    ],
+    "answer": "Can be loaded and unloaded without rebooting the system",
+    "explanation": "Kernel modules extend the kernel dynamically, enabling flexible driver management."
+  },
+  {
+    "id": 117,
+    "topic": "Security Mechanisms",
+    "question": "What is the principle of least privilege?",
+    "options": [
+      "A process should have only the permissions it needs to function",
+      "All users should have admin rights",
+      "Memory should be encrypted by default",
+      "Network access should be unrestricted"
+    ],
+    "answer": "A process should have only the permissions it needs to function",
+    "explanation": "This minimizes the damage from compromised or buggy software."
+  },
+  {
+    "id": 118,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'perf' in Linux?",
+    "options": [
+      "Profile CPU performance counters and system events",
+      "Edit configuration files",
+      "Manage user accounts",
+      "Format disks"
+    ],
+    "answer": "Profile CPU performance counters and system events",
+    "explanation": "Perf provides detailed insights into CPU cycles, cache misses, branch mispredictions, etc."
+  },
+  {
+    "id": 119,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of swap space?",
+    "options": [
+      "Extend virtual memory by using disk as overflow RAM",
+      "Backup user files",
+      "Store temporary internet files",
+      "Cache disk blocks"
+    ],
+    "answer": "Extend virtual memory by using disk as overflow RAM",
+    "explanation": "Swap allows the system to run more processes than can fit in physical memory."
+  },
+  {
+    "id": 120,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "What is a key advantage of message passing over shared memory?",
+    "options": [
+      "Easier to reason about and avoids race conditions",
+      "Faster performance",
+      "Lower memory usage",
+      "No need for synchronization"
+    ],
+    "answer": "Easier to reason about and avoids race conditions",
+    "explanation": "Message passing encapsulates data transfer, reducing the risk of concurrency bugs."
+  },
+  {
+    "id": 121,
+    "topic": "Process Synchronization",
+    "question": "Which of the following is a hardware-supported atomic operation?",
+    "options": [
+      "Compare-and-swap (CAS)",
+      "Print statement",
+      "File open",
+      "Network send"
+    ],
+    "answer": "Compare-and-swap (CAS)",
+    "explanation": "CAS is used to implement lock-free data structures and synchronization primitives."
+  },
+  {
+    "id": 122,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of garbage collection in real-time systems?",
+    "options": [
+      "Unpredictable pause times during collection",
+      "High memory usage",
+      "Security vulnerabilities",
+      "Incompatibility with C"
+    ],
+    "answer": "Unpredictable pause times during collection",
+    "explanation": "Garbage collection can introduce latency spikes, violating real-time constraints."
+  },
+  {
+    "id": 123,
+    "topic": "File System Internals",
+    "question": "Which file system feature allows multiple names to refer to the same file?",
+    "options": [
+      "Hard links",
+      "Symbolic links",
+      "Mount points",
+      "Journaling"
+    ],
+    "answer": "Hard links",
+    "explanation": "Hard links point directly to the same inode, so the file persists until all links are deleted."
+  },
+  {
+    "id": 124,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "What is the main goal of real-time scheduling algorithms?",
+    "options": [
+      "Meet task deadlines",
+      "Maximize throughput",
+      "Minimize average wait time",
+      "Balance CPU and I/O usage"
+    ],
+    "answer": "Meet task deadlines",
+    "explanation": "Correctness in real-time systems depends on completing tasks by their deadlines."
+  },
+  {
+    "id": 125,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which resource allocation strategy can prevent circular wait?",
+    "options": [
+      "Impose a total ordering on resource types and require ascending requests",
+      "Allow preemption",
+      "Require all-or-nothing allocation",
+      "Use timeouts"
+    ],
+    "answer": "Impose a total ordering on resource types and require ascending requests",
+    "explanation": "This ensures no cycle can form in the resource allocation graph."
+  },
+  {
+    "id": 126,
+    "topic": "Device Driver Implementation",
+    "question": "What is the purpose of the 'probe' function in a Linux device driver?",
+    "options": [
+      "Detect and initialize a device when it is found",
+      "Handle user read requests",
+      "Schedule CPU tasks",
+      "Manage memory allocation"
+    ],
+    "answer": "Detect and initialize a device when it is found",
+    "explanation": "The probe function is called when the kernel matches a device with a driver."
+  },
+  {
+    "id": 127,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents code injection attacks by marking stack memory as non-executable?",
+    "options": [
+      "NX bit (No-eXecute)",
+      "ASLR",
+      "Sandboxing",
+      "Firewall"
+    ],
+    "answer": "NX bit (No-eXecute)",
+    "explanation": "The NX bit, supported by modern CPUs, enforces DEP by hardware."
+  },
+  {
+    "id": 128,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary bottleneck in I/O-bound applications?",
+    "options": [
+      "Disk or network speed",
+      "CPU speed",
+      "Memory size",
+      "Compiler optimization"
+    ],
+    "answer": "Disk or network speed",
+    "explanation": "I/O-bound apps spend most time waiting for data from slow peripherals."
+  },
+  {
+    "id": 129,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main advantage of using large pages (huge pages)?",
+    "options": [
+      "Reduce TLB misses and improve performance for large workloads",
+      "Increase memory fragmentation",
+      "Simplify page replacement",
+      "Reduce security"
+    ],
+    "answer": "Reduce TLB misses and improve performance for large workloads",
+    "explanation": "Fewer TLB entries are needed to map the same amount of memory."
+  },
+  {
+    "id": 130,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by D-Bus in Linux desktop environments?",
+    "options": [
+      "Message passing over a message bus",
+      "Shared memory",
+      "Pipes",
+      "Signals"
+    ],
+    "answer": "Message passing over a message bus",
+    "explanation": "D-Bus provides a standardized way for applications to communicate via a central daemon."
+  },
+  {
+    "id": 131,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of a condition variable?",
+    "options": [
+      "Allow threads to wait for a specific condition to become true",
+      "Replace semaphores entirely",
+      "Measure execution time",
+      "Allocate memory"
+    ],
+    "answer": "Allow threads to wait for a specific condition to become true",
+    "explanation": "Condition variables are used with mutexes to implement complex synchronization patterns."
+  },
+  {
+    "id": 132,
+    "topic": "Memory Optimization",
+    "question": "What is memory overcommit?",
+    "options": [
+      "Allocating more virtual memory than physical RAM + swap",
+      "Using too much cache",
+      "Fragmenting memory",
+      "Swapping excessively"
+    ],
+    "answer": "Allocating more virtual memory than physical RAM + swap",
+    "explanation": "Linux allows overcommit under the assumption that not all allocated memory will be used."
+  },
+  {
+    "id": 133,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'inode' table?",
+    "options": [
+      "Store metadata for all files in the file system",
+      "List free disk blocks",
+      "Cache directory entries",
+      "Manage process IDs"
+    ],
+    "answer": "Store metadata for all files in the file system",
+    "explanation": "Each file has a unique inode containing its size, permissions, timestamps, and data block pointers."
+  },
+  {
+    "id": 134,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is non-preemptive?",
+    "options": [
+      "First-Come, First-Served (FCFS)",
+      "Round Robin",
+      "Preemptive Priority",
+      "EDF"
+    ],
+    "answer": "First-Come, First-Served (FCFS)",
+    "explanation": "Once a process starts, it runs to completion without being interrupted."
+  },
+  {
+    "id": 135,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main limitation of deadlock detection?",
+    "options": [
+      "Overhead of periodically checking for cycles",
+      "It cannot prevent deadlock",
+      "It requires special hardware",
+      "It only works with single resources"
+    ],
+    "answer": "Overhead of periodically checking for cycles",
+    "explanation": "Detection algorithms consume CPU time and may not catch deadlocks immediately."
+  },
+  {
+    "id": 136,
+    "topic": "Device Driver Implementation",
+    "question": "What is the difference between kernel-space and user-space drivers?",
+    "options": [
+      "Kernel-space drivers have full hardware access but can crash the system; user-space are safer but slower",
+      "User-space drivers are faster",
+      "Kernel-space drivers cannot use DMA",
+      "User-space drivers have higher priority"
+    ],
+    "answer": "Kernel-space drivers have full hardware access but can crash the system; user-space are safer but slower",
+    "explanation": "User-space drivers (e.g., UIO in Linux) trade performance for stability."
+  },
+  {
+    "id": 137,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a file can only be executed if it has not been tampered with?",
+    "options": [
+      "Code signing",
+      "File permissions",
+      "Encryption",
+      "Compression"
+    ],
+    "answer": "Code signing",
+    "explanation": "Digital signatures verify the authenticity and integrity of executable code."
+  },
+  {
+    "id": 138,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'iostat' in Linux?",
+    "options": [
+      "Monitor CPU and disk I/O statistics",
+      "List running processes",
+      "Manage network interfaces",
+      "Check memory usage"
+    ],
+    "answer": "Monitor CPU and disk I/O statistics",
+    "explanation": "Iostat helps identify I/O bottlenecks and disk utilization issues."
+  },
+  {
+    "id": 139,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the page cache?",
+    "options": [
+      "Cache file data in memory to reduce disk I/O",
+      "Store page table entries",
+      "Hold swap data",
+      "Manage TLB entries"
+    ],
+    "answer": "Cache file data in memory to reduce disk I/O",
+    "explanation": "The page cache keeps recently accessed file blocks in RAM for faster subsequent access."
+  },
+  {
+    "id": 140,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by Android for communication between apps and system services?",
+    "options": [
+      "Binder",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Binder",
+    "explanation": "Binder is a custom Android IPC mechanism optimized for mobile performance and security."
+  },
+  {
+    "id": 141,
+    "topic": "Process Synchronization",
+    "question": "What is the dining philosophers problem used to illustrate?",
+    "options": [
+      "Deadlock and starvation in resource allocation",
+      "CPU scheduling fairness",
+      "Memory fragmentation",
+      "File system consistency"
+    ],
+    "answer": "Deadlock and starvation in resource allocation",
+    "explanation": "It models the challenges of allocating shared resources (forks) without deadlock or starvation."
+  },
+  {
+    "id": 142,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of using a buddy system for memory allocation?",
+    "options": [
+      "Fast allocation and deallocation with minimal external fragmentation",
+      "Perfect memory utilization",
+      "Supports arbitrary block sizes",
+      "No internal fragmentation"
+    ],
+    "answer": "Fast allocation and deallocation with minimal external fragmentation",
+    "explanation": "The buddy system uses power-of-two block sizes and coalescing to manage memory efficiently."
+  },
+  {
+    "id": 143,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'extents' feature in ext4?",
+    "options": [
+      "Replace indirect block pointers with extent descriptors for large files",
+      "Add journaling support",
+      "Enable encryption",
+      "Improve directory indexing"
+    ],
+    "answer": "Replace indirect block pointers with extent descriptors for large files",
+    "explanation": "Extents reduce metadata overhead and improve large file performance."
+  },
+  {
+    "id": 144,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "What is the main disadvantage of Shortest Job First (SJF) scheduling?",
+    "options": [
+      "Starvation of long processes",
+      "High context switch overhead",
+      "Poor CPU utilization",
+      "Not suitable for real-time systems"
+    ],
+    "answer": "Starvation of long processes",
+    "explanation": "If short jobs keep arriving, long jobs may never get scheduled."
+  },
+  {
+    "id": 145,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a necessary condition for deadlock?",
+    "options": [
+      "Circular wait",
+      "Preemption",
+      "Shared resources",
+      "High CPU usage"
+    ],
+    "answer": "Circular wait",
+    "explanation": "Circular wait is one of the four Coffman conditions required for deadlock."
+  },
+  {
+    "id": 146,
+    "topic": "Device Driver Implementation",
+    "question": "What is the purpose of the 'open' system call in device drivers?",
+    "options": [
+      "Initialize the device and prepare it for I/O",
+      "Allocate memory for the process",
+      "Schedule the process",
+      "Create a new file"
+    ],
+    "answer": "Initialize the device and prepare it for I/O",
+    "explanation": "The driver's open() function is called when a user process opens the device file."
+  },
+  {
+    "id": 147,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a compromised application from accessing other users' data?",
+    "options": [
+      "User-based access control",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "User-based access control",
+    "explanation": "File and process permissions are enforced based on user identity."
+  },
+  {
+    "id": 148,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'vmstat' in Linux?",
+    "options": [
+      "Report virtual memory, CPU, and I/O statistics",
+      "Monitor network traffic",
+      "List open files",
+      "Check disk space"
+    ],
+    "answer": "Report virtual memory, CPU, and I/O statistics",
+    "explanation": "Vmstat provides a snapshot of system performance metrics."
+  },
+  {
+    "id": 149,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'valid' bit in a page table entry?",
+    "options": [
+      "Indicate whether the page is in physical memory",
+      "Mark the page as read-only",
+      "Enable caching",
+      "Signal a dirty page"
+    ],
+    "answer": "Indicate whether the page is in physical memory",
+    "explanation": "If the valid bit is 0, accessing the page causes a page fault."
+  },
+  {
+    "id": 150,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "What is a key advantage of using message queues over pipes?",
+    "options": [
+      "Messages have boundaries and can be prioritized",
+      "Lower memory usage",
+      "Faster performance",
+      "No kernel involvement"
+    ],
+    "answer": "Messages have boundaries and can be prioritized",
+    "explanation": "Unlike byte-stream pipes, message queues preserve message boundaries and support priorities."
+  },
+  {
+    "id": 151,
+    "topic": "Process Synchronization",
+    "question": "Which of the following is true about semaphores?",
+    "options": [
+      "They can be used to solve the critical section problem",
+      "They are only for single-process use",
+      "They cannot be used for counting",
+      "They are slower than mutexes in all cases"
+    ],
+    "answer": "They can be used to solve the critical section problem",
+    "explanation": "Binary semaphores (count = 1) enforce mutual exclusion; counting semaphores manage multiple resources."
+  },
+  {
+    "id": 152,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'brk' and 'sbrk' system calls?",
+    "options": [
+      "Adjust the program break to change heap size",
+      "Map files into memory",
+      "Allocate stack space",
+      "Create new processes"
+    ],
+    "answer": "Adjust the program break to change heap size",
+    "explanation": "These calls dynamically resize the heap for malloc() implementations."
+  },
+  {
+    "id": 153,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of directory indexing in ext4?",
+    "options": [
+      "Speeds up file lookups in large directories",
+      "Reduces disk fragmentation",
+      "Improves security",
+      "Enables compression"
+    ],
+    "answer": "Speeds up file lookups in large directories",
+    "explanation": "Instead of linear search, ext4 uses HTree (hash tree) indexing for O(log n) lookups."
+  },
+  {
+    "id": 154,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in most time-sharing systems?",
+    "options": [
+      "Round Robin",
+      "FCFS",
+      "SJF",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Round Robin",
+    "explanation": "Round Robin provides good response time and fairness for interactive workloads."
+  },
+  {
+    "id": 155,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main advantage of deadlock prevention over avoidance?",
+    "options": [
+      "No need for runtime checks or resource information",
+      "Higher resource utilization",
+      "No starvation",
+      "Better performance"
+    ],
+    "answer": "No need for runtime checks or resource information",
+    "explanation": "Prevention eliminates one Coffman condition statically, avoiding complex runtime algorithms."
+  },
+  {
+    "id": 156,
+    "topic": "Device Driver Implementation",
+    "question": "What is the purpose of the 'ioctl' system call?",
+    "options": [
+      "Perform device-specific operations not covered by read/write",
+      "Allocate memory",
+      "Schedule processes",
+      "Manage file systems"
+    ],
+    "answer": "Perform device-specific operations not covered by read/write",
+    "explanation": "Ioctl allows user programs to send custom commands to device drivers."
+  },
+  {
+    "id": 157,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot access another process's memory?",
+    "options": [
+      "Virtual memory isolation",
+      "File permissions",
+      "User groups",
+      "Network firewalls"
+    ],
+    "answer": "Virtual memory isolation",
+    "explanation": "Each process has its own virtual address space, enforced by the MMU."
+  },
+  {
+    "id": 158,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary cause of high context switch overhead?",
+    "options": [
+      "Frequent switching between processes due to small time quanta",
+      "Large memory pages",
+      "Slow disk I/O",
+      "High CPU temperature"
+    ],
+    "answer": "Frequent switching between processes due to small time quanta",
+    "explanation": "Context switches save/restore CPU state, which is expensive if done too often."
+  },
+  {
+    "id": 159,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'accessed' bit in a page table entry?",
+    "options": [
+      "Indicate that the page has been read or written",
+      "Mark the page as executable",
+      "Signal a page fault",
+      "Enable write protection"
+    ],
+    "answer": "Indicate that the page has been read or written",
+    "explanation": "The accessed bit helps page replacement algorithms identify recently used pages."
+  },
+  {
+    "id": 160,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by System V for message passing?",
+    "options": [
+      "System V message queues",
+      "POSIX shared memory",
+      "Unix sockets",
+      "Pipes"
+    ],
+    "answer": "System V message queues",
+    "explanation": "System V IPC provides message queues, semaphores, and shared memory as kernel-persistent objects."
+  },
+  {
+    "id": 161,
+    "topic": "Process Synchronization",
+    "question": "What is the main difference between a mutex and a binary semaphore?",
+    "options": [
+      "Mutex has ownership (only owner can unlock); semaphore does not",
+      "Semaphore is faster",
+      "Mutex can be used across processes; semaphore cannot",
+      "Semaphore supports counting; mutex does not"
+    ],
+    "answer": "Mutex has ownership (only owner can unlock); semaphore does not",
+    "explanation": "This makes mutexes safer for thread synchronization within a process."
+  },
+  {
+    "id": 162,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of first-fit memory allocation?",
+    "options": [
+      "Can lead to fragmentation at the start of memory",
+      "Slow search time",
+      "Requires sorted free list",
+      "Wastes memory on large blocks"
+    ],
+    "answer": "Can lead to fragmentation at the start of memory",
+    "explanation": "First-fit tends to allocate from lower addresses, fragmenting the beginning of memory."
+  },
+  {
+    "id": 163,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'lost+found' directory in ext file systems?",
+    "options": [
+      "Hold orphaned files recovered by fsck after a crash",
+      "Store deleted files temporarily",
+      "Cache frequently accessed files",
+      "Manage user home directories"
+    ],
+    "answer": "Hold orphaned files recovered by fsck after a crash",
+    "explanation": "Fsck links recovered inodes to this directory so users can inspect them."
+  },
+  {
+    "id": 164,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "What is the main advantage of preemptive scheduling?",
+    "options": [
+      "Improves responsiveness for interactive tasks",
+      "Reduces context switches",
+      "Simplifies implementation",
+      "Eliminates starvation"
+    ],
+    "answer": "Improves responsiveness for interactive tasks",
+    "explanation": "Preemption allows the scheduler to interrupt long-running tasks for urgent ones."
+  },
+  {
+    "id": 165,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a deadlock prevention technique?",
+    "options": [
+      "Allow preemption of resources",
+      "Use Banker's Algorithm",
+      "Detect cycles",
+      "Ignore deadlocks"
+    ],
+    "answer": "Allow preemption of resources",
+    "explanation": "Preemption breaks the 'no preemption' Coffman condition."
+  },
+  {
+    "id": 166,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of a device tree in embedded Linux?",
+    "options": [
+      "Describe hardware configuration to the kernel without code changes",
+      "Schedule device access",
+      "Manage memory for devices",
+      "Handle interrupts"
+    ],
+    "answer": "Describe hardware configuration to the kernel without code changes",
+    "explanation": "The device tree allows a single kernel image to support multiple hardware platforms."
+  },
+  {
+    "id": 167,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a user from reading another user's private files?",
+    "options": [
+      "File permissions (e.g., chmod 600)",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "File permissions (e.g., chmod 600)",
+    "explanation": "Unix file permissions control read, write, and execute access per user/group/others."
+  },
+  {
+    "id": 168,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'sar' in Linux?",
+    "options": [
+      "Collect and report system activity history",
+      "Edit text files",
+      "Compile programs",
+      "Format disks"
+    ],
+    "answer": "Collect and report system activity history",
+    "explanation": "Sar (System Activity Reporter) logs CPU, memory, I/O, and network usage over time."
+  },
+  {
+    "id": 169,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of demand paging?",
+    "options": [
+      "Load pages only when they are accessed",
+      "Preload all pages at startup",
+      "Swap entire processes",
+      "Use fixed-size memory blocks"
+    ],
+    "answer": "Load pages only when they are accessed",
+    "explanation": "Demand paging improves memory efficiency by avoiding loading unused pages."
+  },
+  {
+    "id": 170,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is connectionless and unreliable?",
+    "options": [
+      "UDP sockets",
+      "TCP sockets",
+      "Message queues",
+      "Pipes"
+    ],
+    "answer": "UDP sockets",
+    "explanation": "UDP sends datagrams without guaranteeing delivery, order, or duplication."
+  },
+  {
+    "id": 171,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'wait' and 'signal' operations in semaphores?",
+    "options": [
+      "Wait decrements the semaphore; signal increments it",
+      "Wait creates a process; signal kills it",
+      "Wait allocates memory; signal frees it",
+      "Wait reads data; signal writes data"
+    ],
+    "answer": "Wait decrements the semaphore; signal increments it",
+    "explanation": "If wait() finds the value <= 0, the process blocks until another process calls signal()."
+  },
+  {
+    "id": 172,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of worst-fit allocation?",
+    "options": [
+      "Leaves largest possible free block for future large requests",
+      "Minimizes fragmentation",
+      "Fastest allocation",
+      "Reduces search time"
+    ],
+    "answer": "Leaves largest possible free block for future large requests",
+    "explanation": "Worst-fit allocates from the largest free block, preserving medium-sized blocks."
+  },
+  {
+    "id": 173,
+    "topic": "File System Internals",
+    "question": "What is the main disadvantage of hard links?",
+    "options": [
+      "Cannot link across file systems or to directories",
+      "Slower file access",
+      "Higher memory usage",
+      "Less secure"
+    ],
+    "answer": "Cannot link across file systems or to directories",
+    "explanation": "Hard links point to inodes, which are file-system-specific, and directories have special linking rules."
+  },
+  {
+    "id": 174,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "What is the main purpose of aging in priority scheduling?",
+    "options": [
+      "Gradually increase the priority of waiting processes to prevent starvation",
+      "Reduce the priority of CPU-bound processes",
+      "Measure process execution time",
+      "Balance I/O and CPU usage"
+    ],
+    "answer": "Gradually increase the priority of waiting processes to prevent starvation",
+    "explanation": "Aging ensures that low-priority processes eventually get CPU time."
+  },
+  {
+    "id": 175,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which graph-based method detects deadlock in single-instance resource systems?",
+    "options": [
+      "Resource allocation graph cycle detection",
+      "Wait-for graph",
+      "State graph",
+      "Dependency graph"
+    ],
+    "answer": "Resource allocation graph cycle detection",
+    "explanation": "In single-instance systems, a cycle implies deadlock."
+  },
+  {
+    "id": 176,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'release' function in a device driver?",
+    "options": [
+      "Clean up and free resources when the device file is closed",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Clean up and free resources when the device file is closed",
+    "explanation": "The release() function is the counterpart to open(), called on the last close()."
+  },
+  {
+    "id": 177,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that only signed kernel modules can be loaded?",
+    "options": [
+      "Module signature verification",
+      "File permissions",
+      "User authentication",
+      "Firewall"
+    ],
+    "answer": "Module signature verification",
+    "explanation": "This prevents loading of malicious or untrusted kernel code."
+  },
+  {
+    "id": 178,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'lsof' in Linux?",
+    "options": [
+      "List open files and the processes using them",
+      "Monitor CPU usage",
+      "Check disk space",
+      "Manage network connections"
+    ],
+    "answer": "List open files and the processes using them",
+    "explanation": "Lsof helps identify which processes are holding files open, useful for troubleshooting."
+  },
+  {
+    "id": 179,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of page replacement algorithms?",
+    "options": [
+      "Select a page to evict when a new page is needed and memory is full",
+      "Detect memory leaks",
+      "Allocate virtual addresses",
+      "Manage TLB entries"
+    ],
+    "answer": "Select a page to evict when a new page is needed and memory is full",
+    "explanation": "Page replacement is critical for efficient virtual memory operation."
+  },
+  {
+    "id": 180,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by Windows for local interprocess communication?",
+    "options": [
+      "Named pipes",
+      "Shared memory",
+      "Sockets",
+      "Message queues"
+    ],
+    "answer": "Named pipes",
+    "explanation": "Windows named pipes provide a flexible, secure IPC mechanism similar to Unix FIFOs but with more features."
+  },
+  {
+    "id": 181,
+    "topic": "Process Synchronization",
+    "question": "What is the main problem with the 'busy waiting' approach to synchronization?",
+    "options": [
+      "Wastes CPU cycles that could be used by other processes",
+      "Causes memory leaks",
+      "Increases disk I/O",
+      "Reduces network speed"
+    ],
+    "answer": "Wastes CPU cycles that could be used by other processes",
+    "explanation": "Busy waiting spins in a loop, consuming CPU time without doing useful work."
+  },
+  {
+    "id": 182,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'mmap' system call?",
+    "options": [
+      "Map files or devices into the process's virtual address space",
+      "Allocate heap memory",
+      "Create new processes",
+      "Schedule CPU time"
+    ],
+    "answer": "Map files or devices into the process's virtual address space",
+    "explanation": "Mmap allows file I/O to be done via memory reads/writes, often improving performance."
+  },
+  {
+    "id": 183,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of symbolic links over hard links?",
+    "options": [
+      "Can link across file systems and to directories",
+      "Faster access",
+      "More secure",
+      "Use less disk space"
+    ],
+    "answer": "Can link across file systems and to directories",
+    "explanation": "Symbolic links are special files containing a path, not a direct inode reference."
+  },
+  {
+    "id": 184,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm gives each process a priority that decays over time?",
+    "options": [
+      "Multilevel Feedback Queue",
+      "Round Robin",
+      "FCFS",
+      "SJF"
+    ],
+    "answer": "Multilevel Feedback Queue",
+    "explanation": "As a process uses CPU time, its priority decreases, allowing I/O-bound processes to jump ahead."
+  },
+  {
+    "id": 185,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main disadvantage of the Ostrich algorithm?",
+    "options": [
+      "System may hang or require reboot if deadlock occurs",
+      "High CPU overhead",
+      "Complex implementation",
+      "Prevents all resource sharing"
+    ],
+    "answer": "System may hang or require reboot if deadlock occurs",
+    "explanation": "By ignoring deadlock, the system has no recovery mechanism when it happens."
+  },
+  {
+    "id": 186,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'read' function in a device driver?",
+    "options": [
+      "Transfer data from the device to user space",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Transfer data from the device to user space",
+    "explanation": "The read() function is called when a user process invokes read() on the device file."
+  },
+  {
+    "id": 187,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a process from escalating privileges?",
+    "options": [
+      "Principle of least privilege and capability-based security",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "Principle of least privilege and capability-based security",
+    "explanation": "Processes are granted only the minimum permissions needed, reducing attack surface."
+  },
+  {
+    "id": 188,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'netstat' in Linux?",
+    "options": [
+      "Display network connections, routing tables, and interface statistics",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Display network connections, routing tables, and interface statistics",
+    "explanation": "Netstat helps diagnose network-related performance issues."
+  },
+  {
+    "id": 189,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'swap' partition or file?",
+    "options": [
+      "Provide backing store for pages not in physical memory",
+      "Cache disk blocks",
+      "Store temporary files",
+      "Hold the kernel image"
+    ],
+    "answer": "Provide backing store for pages not in physical memory",
+    "explanation": "Swap space on disk allows the system to use more virtual memory than physical RAM."
+  },
+  {
+    "id": 190,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by gRPC for high-performance communication?",
+    "options": [
+      "HTTP/2 with Protocol Buffers",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "HTTP/2 with Protocol Buffers",
+    "explanation": "gRPC uses HTTP/2 for transport and Protocol Buffers for serialization, enabling efficient cross-language RPC."
+  },
+  {
+    "id": 191,
+    "topic": "Process Synchronization",
+    "question": "What is the main advantage of using monitors over semaphores?",
+    "options": [
+      "Higher-level abstraction that encapsulates shared data and synchronization",
+      "Faster performance",
+      "Lower memory usage",
+      "Works only in kernel space"
+    ],
+    "answer": "Higher-level abstraction that encapsulates shared data and synchronization",
+    "explanation": "Monitors reduce the chance of programming errors by bundling data and operations."
+  },
+  {
+    "id": 192,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of memory compaction?",
+    "options": [
+      "High CPU overhead due to moving allocated blocks",
+      "Increases fragmentation",
+      "Requires more disk space",
+      "Slows down I/O"
+    ],
+    "answer": "High CPU overhead due to moving allocated blocks",
+    "explanation": "Compaction is expensive because it requires updating all pointers to moved blocks."
+  },
+  {
+    "id": 193,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'superblock' in a file system?",
+    "options": [
+      "Store overall file system metadata like size, block count, and free blocks",
+      "Hold user file data",
+      "Manage process scheduling",
+      "Handle device interrupts"
+    ],
+    "answer": "Store overall file system metadata like size, block count, and free blocks",
+    "explanation": "The superblock is critical for file system mounting and integrity."
+  },
+  {
+    "id": 194,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is optimal for minimizing average waiting time?",
+    "options": [
+      "Shortest Job First (SJF)",
+      "Round Robin",
+      "FCFS",
+      "Priority Scheduling"
+    ],
+    "answer": "Shortest Job First (SJF)",
+    "explanation": "SJF gives the CPU to the process with the shortest next CPU burst."
+  },
+  {
+    "id": 195,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a deadlock recovery method?",
+    "options": [
+      "Terminate all processes involved in the deadlock",
+      "Use semaphores",
+      "Increase RAM",
+      "Disable interrupts"
+    ],
+    "answer": "Terminate all processes involved in the deadlock",
+    "explanation": "This is a simple but drastic recovery method to break the deadlock cycle."
+  },
+  {
+    "id": 196,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'write' function in a device driver?",
+    "options": [
+      "Transfer data from user space to the device",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Transfer data from user space to the device",
+    "explanation": "The write() function is called when a user process invokes write() on the device file."
+  },
+  {
+    "id": 197,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a web application cannot access the user's file system?",
+    "options": [
+      "Sandboxing in the browser",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Sandboxing in the browser",
+    "explanation": "Browsers restrict web code to a sandbox with no direct file system access."
+  },
+  {
+    "id": 198,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'strace' in Linux?",
+    "options": [
+      "Trace system calls and signals made by a process",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Trace system calls and signals made by a process",
+    "explanation": "Strace helps debug performance issues and understand program behavior."
+  },
+  {
+    "id": 199,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'page fault' handler?",
+    "options": [
+      "Load the required page from disk into memory",
+      "Terminate the process",
+      "Allocate a new process",
+      "Schedule CPU time"
+    ],
+    "answer": "Load the required page from disk into memory",
+    "explanation": "The page fault handler is part of the OS's virtual memory manager."
+  },
+  {
+    "id": 200,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by Redis for communication between clients and server?",
+    "options": [
+      "TCP sockets",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "TCP sockets",
+    "explanation": "Redis uses TCP for its client-server protocol, enabling network transparency."
+  },
+  {
+    "id": 201,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'test-and-set' instruction?",
+    "options": [
+      "Atomically read and modify a memory location to implement locks",
+      "Measure execution time",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Atomically read and modify a memory location to implement locks",
+    "explanation": "Test-and-set is a hardware primitive for building spinlocks."
+  },
+  {
+    "id": 202,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of using fixed-size block allocation?",
+    "options": [
+      "Very fast allocation and deallocation with no fragmentation",
+      "Supports arbitrary request sizes",
+      "Reduces memory usage",
+      "Improves security"
+    ],
+    "answer": "Very fast allocation and deallocation with no fragmentation",
+    "explanation": "Used in memory pools for objects of the same size, like kernel slabs."
+  },
+  {
+    "id": 203,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'block bitmap' in a file system?",
+    "options": [
+      "Track which disk blocks are free or in use",
+      "Store file names",
+      "Manage process IDs",
+      "Handle device interrupts"
+    ],
+    "answer": "Track which disk blocks are free or in use",
+    "explanation": "The block bitmap is part of the file system's free space manager."
+  },
+  {
+    "id": 204,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time Linux with SCHED_FIFO?",
+    "options": [
+      "First-in, first-out (non-preemptive within same priority)",
+      "Round Robin",
+      "EDF",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "First-in, first-out (non-preemptive within same priority)",
+    "explanation": "SCHED_FIFO runs the highest-priority ready thread until it blocks or yields."
+  },
+  {
+    "id": 205,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main purpose of the 'wait-for' graph?",
+    "options": [
+      "Detect deadlocks by showing process-to-process waits",
+      "Schedule CPU time",
+      "Manage memory allocation",
+      "Handle file I/O"
+    ],
+    "answer": "Detect deadlocks by showing process-to-process waits",
+    "explanation": "A cycle in the wait-for graph indicates a deadlock."
+  },
+  {
+    "id": 206,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'poll' function in a device driver?",
+    "options": [
+      "Indicate whether the device is ready for I/O without blocking",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Indicate whether the device is ready for I/O without blocking",
+    "explanation": "The poll() function supports non-blocking I/O and is used by select()/poll() system calls."
+  },
+  {
+    "id": 207,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a buffer overflow from overwriting the return address?",
+    "options": [
+      "Stack canaries",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Stack canaries",
+    "explanation": "A canary value is placed before the return address and checked before function return."
+  },
+  {
+    "id": 208,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'iotop' in Linux?",
+    "options": [
+      "Monitor disk I/O usage by process",
+      "Monitor CPU usage",
+      "Check network traffic",
+      "List open files"
+    ],
+    "answer": "Monitor disk I/O usage by process",
+    "explanation": "Iotop helps identify processes causing high disk load."
+  },
+  {
+    "id": 209,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'dirty' bit in a page table entry?",
+    "options": [
+      "Indicate that the page has been modified and needs to be written to disk",
+      "Mark the page as read-only",
+      "Signal a page fault",
+      "Enable caching"
+    ],
+    "answer": "Indicate that the page has been modified and needs to be written to disk",
+    "explanation": "The dirty bit optimizes swapping by avoiding writes of clean pages."
+  },
+  {
+    "id": 210,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by ZeroMQ for messaging?",
+    "options": [
+      "Sockets with various messaging patterns",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Sockets with various messaging patterns",
+    "explanation": "ZeroMQ provides a high-level socket API for request-reply, pub-sub, and other patterns."
+  },
+  {
+    "id": 211,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'compare-and-swap' (CAS) instruction?",
+    "options": [
+      "Atomically update a memory location if its value matches an expected value",
+      "Measure execution time",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Atomically update a memory location if its value matches an expected value",
+    "explanation": "CAS is used to implement lock-free data structures."
+  },
+  {
+    "id": 212,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of using a memory pool?",
+    "options": [
+      "Only efficient for fixed-size allocations",
+      "High fragmentation",
+      "Slow allocation",
+      "Incompatible with virtual memory"
+    ],
+    "answer": "Only efficient for fixed-size allocations",
+    "explanation": "Memory pools are designed for objects of the same size; variable sizes waste space."
+  },
+  {
+    "id": 213,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'inode bitmap'?",
+    "options": [
+      "Track which inodes are free or in use",
+      "Store file data",
+      "Manage process scheduling",
+      "Handle device interrupts"
+    ],
+    "answer": "Track which inodes are free or in use",
+    "explanation": "The inode bitmap is used when creating or deleting files."
+  },
+  {
+    "id": 214,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time Linux with SCHED_RR?",
+    "options": [
+      "Round Robin within fixed priority levels",
+      "FCFS",
+      "EDF",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Round Robin within fixed priority levels",
+    "explanation": "SCHED_RR assigns time slices to real-time threads of the same priority."
+  },
+  {
+    "id": 215,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a necessary condition for deadlock?",
+    "options": [
+      "Hold and wait",
+      "Preemption",
+      "Shared memory",
+      "High CPU usage"
+    ],
+    "answer": "Hold and wait",
+    "explanation": "A process must be holding at least one resource while waiting for others."
+  },
+  {
+    "id": 216,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'mmap' function in a device driver?",
+    "options": [
+      "Map device memory into the user process's address space",
+      "Allocate kernel memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Map device memory into the user process's address space",
+    "explanation": "This allows user programs to access device registers or buffers directly."
+  },
+  {
+    "id": 217,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a downloaded program is from a trusted source?",
+    "options": [
+      "Code signing",
+      "File permissions",
+      "Encryption",
+      "Compression"
+    ],
+    "answer": "Code signing",
+    "explanation": "Digital signatures verify the publisher's identity and code integrity."
+  },
+  {
+    "id": 218,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'htop' in Linux?",
+    "options": [
+      "Interactive process viewer with color and tree view",
+      "Edit text files",
+      "Compile programs",
+      "Format disks"
+    ],
+    "answer": "Interactive process viewer with color and tree view",
+    "explanation": "Htop is an enhanced version of top with better usability and features."
+  },
+  {
+    "id": 219,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'valid' bit in a page table entry?",
+    "options": [
+      "Indicate whether the page is currently in physical memory",
+      "Mark the page as executable",
+      "Signal a dirty page",
+      "Enable write protection"
+    ],
+    "answer": "Indicate whether the page is currently in physical memory",
+    "explanation": "If the valid bit is 0, a page fault occurs on access."
+  },
+  {
+    "id": 220,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by Kubernetes for pod communication?",
+    "options": [
+      "TCP/IP sockets over a virtual network",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "TCP/IP sockets over a virtual network",
+    "explanation": "Kubernetes assigns each pod an IP address and uses standard networking for communication."
+  },
+  {
+    "id": 221,
+    "topic": "Process Synchronization",
+    "question": "What is the main advantage of using condition variables with mutexes?",
+    "options": [
+      "Allow threads to wait efficiently without busy waiting",
+      "Faster than semaphores",
+      "Use less memory",
+      "Work only in user space"
+    ],
+    "answer": "Allow threads to wait efficiently without busy waiting",
+    "explanation": "Condition variables put waiting threads to sleep until signaled."
+  },
+  {
+    "id": 222,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'sbrk' system call?",
+    "options": [
+      "Change the location of the program break to adjust heap size",
+      "Map files into memory",
+      "Allocate stack space",
+      "Create new processes"
+    ],
+    "answer": "Change the location of the program break to adjust heap size",
+    "explanation": "Sbrk is used by malloc() implementations to request more memory from the OS."
+  },
+  {
+    "id": 223,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of using a B-tree for directory indexing?",
+    "options": [
+      "O(log n) file lookup time even in very large directories",
+      "Reduced disk fragmentation",
+      "Improved security",
+      "Faster file deletion"
+    ],
+    "answer": "O(log n) file lookup time even in very large directories",
+    "explanation": "B-trees keep directory entries sorted and balanced for efficient search."
+  },
+  {
+    "id": 224,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in Windows for foreground processes?",
+    "options": [
+      "Multilevel feedback queue with priority boost",
+      "Round Robin",
+      "FCFS",
+      "SJF"
+    ],
+    "answer": "Multilevel feedback queue with priority boost",
+    "explanation": "Windows boosts the priority of foreground processes for better responsiveness."
+  },
+  {
+    "id": 225,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a sufficient condition for deadlock in single-instance systems?",
+    "options": [
+      "Presence of a cycle in the resource allocation graph",
+      "High CPU usage",
+      "Low memory",
+      "Many processes"
+    ],
+    "answer": "Presence of a cycle in the resource allocation graph",
+    "explanation": "In single-instance systems, a cycle implies that each process is waiting for a resource held by another."
+  },
+  {
+    "id": 226,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'flush' function in a device driver?",
+    "options": [
+      "Ensure all pending data is written to the device",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Ensure all pending data is written to the device",
+    "explanation": "Flush is called when closing a file to guarantee data persistence."
+  },
+  {
+    "id": 227,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a website from reading cookies from another site?",
+    "options": [
+      "Same-origin policy",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Same-origin policy",
+    "explanation": "This browser security feature restricts cross-origin access to resources."
+  },
+  {
+    "id": 228,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'dstat' in Linux?",
+    "options": [
+      "Versatile resource statistics tool combining vmstat, iostat, netstat, etc.",
+      "Edit text files",
+      "Compile programs",
+      "Format disks"
+    ],
+    "answer": "Versatile resource statistics tool combining vmstat, iostat, netstat, etc.",
+    "explanation": "Dstat provides real-time monitoring of multiple system resources in one view."
+  },
+  {
+    "id": 229,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'accessed' bit in a page table entry?",
+    "options": [
+      "Indicate that the page has been read or written recently",
+      "Mark the page as dirty",
+      "Signal a page fault",
+      "Enable caching"
+    ],
+    "answer": "Indicate that the page has been read or written recently",
+    "explanation": "The accessed bit helps page replacement algorithms like LRU."
+  },
+  {
+    "id": 230,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by Docker containers for communication?",
+    "options": [
+      "Virtual Ethernet interfaces and TCP/IP",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Virtual Ethernet interfaces and TCP/IP",
+    "explanation": "Docker uses Linux network namespaces and virtual networks for container communication."
+  },
+  {
+    "id": 231,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'futex' system call in Linux?",
+    "options": [
+      "Provide fast user-space mutexes with kernel fallback for blocking",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Provide fast user-space mutexes with kernel fallback for blocking",
+    "explanation": "Futexes (fast userspace mutexes) minimize kernel involvement for uncontended locks."
+  },
+  {
+    "id": 232,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of using slab allocation?",
+    "options": [
+      "Reduces fragmentation and allocation overhead for kernel objects",
+      "Supports arbitrary sizes",
+      "Increases memory usage",
+      "Slows down allocation"
+    ],
+    "answer": "Reduces fragmentation and allocation overhead for kernel objects",
+    "explanation": "Slab allocation caches pre-initialized objects of the same type."
+  },
+  {
+    "id": 233,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'extents' feature in modern file systems?",
+    "options": [
+      "Represent large contiguous file regions with a single descriptor",
+      "Add journaling",
+      "Enable encryption",
+      "Improve directory hashing"
+    ],
+    "answer": "Represent large contiguous file regions with a single descriptor",
+    "explanation": "Extents reduce metadata overhead compared to traditional block pointers."
+  },
+  {
+    "id": 234,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in the Linux CFS for fairness?",
+    "options": [
+      "Red-black tree tracking virtual runtime",
+      "Round Robin",
+      "Multilevel Feedback Queue",
+      "EDF"
+    ],
+    "answer": "Red-black tree tracking virtual runtime",
+    "explanation": "CFS selects the process with the smallest virtual runtime to ensure fairness."
+  },
+  {
+    "id": 235,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main limitation of deadlock prevention?",
+    "options": [
+      "Low resource utilization due to conservative allocation",
+      "High CPU overhead",
+      "Complex implementation",
+      "Cannot handle multiple resources"
+    ],
+    "answer": "Low resource utilization due to conservative allocation",
+    "explanation": "Prevention strategies like requiring all resources upfront can lead to underutilization."
+  },
+  {
+    "id": 236,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'unlocked_ioctl' function in Linux drivers?",
+    "options": [
+      "Handle ioctl calls without the Big Kernel Lock (BKL)",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Handle ioctl calls without the Big Kernel Lock (BKL)",
+    "explanation": "Unlocked_ioctl allows drivers to manage their own locking for better SMP scalability."
+  },
+  {
+    "id": 237,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot access kernel memory?",
+    "options": [
+      "User/kernel mode separation and MMU protection",
+      "File permissions",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "User/kernel mode separation and MMU protection",
+    "explanation": "The CPU and MMU enforce privilege levels to protect kernel space."
+  },
+  {
+    "id": 238,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'pidstat' in Linux?",
+    "options": [
+      "Monitor per-process CPU, memory, I/O, and context switches",
+      "Edit text files",
+      "Compile programs",
+      "Format disks"
+    ],
+    "answer": "Monitor per-process CPU, memory, I/O, and context switches",
+    "explanation": "Pidstat is part of the sysstat package and provides detailed process-level metrics."
+  },
+  {
+    "id": 239,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'page cache'?",
+    "options": [
+      "Cache file data in RAM to reduce disk I/O",
+      "Store page table entries",
+      "Hold swap data",
+      "Manage TLB entries"
+    ],
+    "answer": "Cache file data in RAM to reduce disk I/O",
+    "explanation": "The page cache keeps recently accessed file blocks in memory for faster access."
+  },
+  {
+    "id": 240,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by golang channels?",
+    "options": [
+      "Synchronous or buffered message passing within a process",
+      "Shared memory",
+      "Pipes",
+      "Sockets"
+    ],
+    "answer": "Synchronous or buffered message passing within a process",
+    "explanation": "Go channels provide a safe way for goroutines to communicate and synchronize."
+  },
+  {
+    "id": 241,
+    "topic": "Process Synchronization",
+    "question": "What is the main problem with the 'strict alternation' solution to critical sections?",
+    "options": [
+      "It violates the progress requirement by forcing strict turns",
+      "It causes high CPU usage",
+      "It doesn't ensure mutual exclusion",
+      "It only works on single-core systems"
+    ],
+    "answer": "It violates the progress requirement by forcing strict turns",
+    "explanation": "If one process is slow, the other must wait even if the critical section is free."
+  },
+  {
+    "id": 242,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'brk' system call?",
+    "options": [
+      "Set the end of the data segment (program break)",
+      "Map files into memory",
+      "Allocate stack space",
+      "Create new processes"
+    ],
+    "answer": "Set the end of the data segment (program break)",
+    "explanation": "Brk is used to change the size of the heap."
+  },
+  {
+    "id": 243,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of using a journaling file system?",
+    "options": [
+      "Fast recovery after crashes by replaying the journal",
+      "Higher disk throughput",
+      "Lower memory usage",
+      "Better CPU scheduling"
+    ],
+    "answer": "Fast recovery after crashes by replaying the journal",
+    "explanation": "The journal logs changes before they are committed to disk."
+  },
+  {
+    "id": 244,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems where deadlines are known?",
+    "options": [
+      "Earliest Deadline First (EDF)",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Earliest Deadline First (EDF)",
+    "explanation": "EDF is optimal for uniprocessor real-time scheduling when deadlines are known."
+  },
+  {
+    "id": 245,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a deadlock prevention strategy?",
+    "options": [
+      "Require processes to release all resources before requesting new ones",
+      "Use Banker's Algorithm",
+      "Detect cycles",
+      "Ignore deadlocks"
+    ],
+    "answer": "Require processes to release all resources before requesting new ones",
+    "explanation": "This breaks the 'hold and wait' condition."
+  },
+  {
+    "id": 246,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'compat_ioctl' function in Linux drivers?",
+    "options": [
+      "Handle 32-bit ioctl calls on 64-bit kernels",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Handle 32-bit ioctl calls on 64-bit kernels",
+    "explanation": "Compat_ioctl provides compatibility for 32-bit user-space applications."
+  },
+  {
+    "id": 247,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a user from executing a file they cannot read?",
+    "options": [
+      "File permissions (execute bit requires read bit in some systems)",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "File permissions (execute bit requires read bit in some systems)",
+    "explanation": "On some systems, the execute permission implies the need for read access to load the file."
+  },
+  {
+    "id": 248,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'mpstat' in Linux?",
+    "options": [
+      "Report CPU usage per processor core",
+      "Monitor disk I/O",
+      "Check network traffic",
+      "List open files"
+    ],
+    "answer": "Report CPU usage per processor core",
+    "explanation": "Mpstat helps identify CPU core imbalances and per-core bottlenecks."
+  },
+  {
+    "id": 249,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of 'huge pages'?",
+    "options": [
+      "Reduce TLB misses for large memory workloads",
+      "Increase fragmentation",
+      "Simplify page replacement",
+      "Reduce security"
+    ],
+    "answer": "Reduce TLB misses for large memory workloads",
+    "explanation": "Huge pages (e.g., 2MB or 1GB) cover more memory per TLB entry."
+  },
+  {
+    "id": 250,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by MPI (Message Passing Interface)?",
+    "options": [
+      "Message passing over various transports (TCP, InfiniBand, etc.)",
+      "Shared memory",
+      "Pipes",
+      "Signals"
+    ],
+    "answer": "Message passing over various transports (TCP, InfiniBand, etc.)",
+    "explanation": "MPI is a standard for parallel computing that uses message passing for communication."
+  },
+  {
+    "id": 251,
+    "topic": "Process Synchronization",
+    "question": "What is the main advantage of using semaphores over disabling interrupts?",
+    "options": [
+      "Works on multiprocessor systems and doesn't affect system clock",
+      "Faster performance",
+      "Lower memory usage",
+      "Simpler implementation"
+    ],
+    "answer": "Works on multiprocessor systems and doesn't affect system clock",
+    "explanation": "Disabling interrupts only works on uniprocessor systems and can disrupt timing."
+  },
+  {
+    "id": 252,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of the best-fit allocation strategy?",
+    "options": [
+      "Creates many small, unusable free fragments",
+      "Slow search time",
+      "Wastes memory on large blocks",
+      "Requires sorted free list"
+    ],
+    "answer": "Creates many small, unusable free fragments",
+    "explanation": "Best-fit leaves behind tiny holes that are too small for most requests."
+  },
+  {
+    "id": 253,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'dentry' in Linux?",
+    "options": [
+      "Represent a directory entry and cache path lookups",
+      "Store file content",
+      "Manage page tables",
+      "Handle device interrupts"
+    ],
+    "answer": "Represent a directory entry and cache path lookups",
+    "explanation": "Dentries speed up file access by caching the mapping from path names to inodes."
+  },
+  {
+    "id": 254,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems with static priorities?",
+    "options": [
+      "Rate Monotonic Scheduling (RMS)",
+      "EDF",
+      "Round Robin",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Rate Monotonic Scheduling (RMS)",
+    "explanation": "RMS assigns higher priority to tasks with shorter periods."
+  },
+  {
+    "id": 255,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main advantage of deadlock detection over prevention?",
+    "options": [
+      "Higher resource utilization because resources are allocated more freely",
+      "No need for runtime checks",
+      "Simpler implementation",
+      "No starvation"
+    ],
+    "answer": "Higher resource utilization because resources are allocated more freely",
+    "explanation": "Detection allows more aggressive allocation, improving throughput."
+  },
+  {
+    "id": 256,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'aio' (asynchronous I/O) interface?",
+    "options": [
+      "Allow I/O operations to complete in the background without blocking",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Allow I/O operations to complete in the background without blocking",
+    "explanation": "AIO enables high-performance I/O by overlapping computation and I/O."
+  },
+  {
+    "id": 257,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot send signals to another user's process?",
+    "options": [
+      "Process ownership and permission checks",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "Process ownership and permission checks",
+    "explanation": "The kernel checks if the sending process has permission to signal the target."
+  },
+  {
+    "id": 258,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'free' in Linux?",
+    "options": [
+      "Display amount of free and used memory in the system",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Display amount of free and used memory in the system",
+    "explanation": "Free shows total, used, free, shared, buff/cache, and available memory."
+  },
+  {
+    "id": 259,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'swappiness' parameter in Linux?",
+    "options": [
+      "Control how aggressively the kernel swaps out memory pages",
+      "Set page size",
+      "Manage TLB size",
+      "Enable huge pages"
+    ],
+    "answer": "Control how aggressively the kernel swaps out memory pages",
+    "explanation": "Higher swappiness means more swapping; lower means more reclaiming of cache."
+  },
+  {
+    "id": 260,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by CORBA for distributed objects?",
+    "options": [
+      "IIOP (Internet Inter-ORB Protocol) over TCP/IP",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "IIOP (Internet Inter-ORB Protocol) over TCP/IP",
+    "explanation": "CORBA uses IIOP to enable communication between objects across networks."
+  },
+  {
+    "id": 261,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'yield' system call?",
+    "options": [
+      "Voluntarily give up the CPU to allow other threads to run",
+      "Allocate memory",
+      "Create a new process",
+      "Handle interrupts"
+    ],
+    "answer": "Voluntarily give up the CPU to allow other threads to run",
+    "explanation": "Yield is used in cooperative multitasking or to improve fairness."
+  },
+  {
+    "id": 262,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of using a buddy system?",
+    "options": [
+      "Fast coalescing of freed blocks to reduce external fragmentation",
+      "Perfect memory utilization",
+      "Supports arbitrary block sizes",
+      "No internal fragmentation"
+    ],
+    "answer": "Fast coalescing of freed blocks to reduce external fragmentation",
+    "explanation": "Buddy blocks can be quickly merged when freed, reducing fragmentation."
+  },
+  {
+    "id": 263,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'ext4' file system's extents feature?",
+    "options": [
+      "Replace indirect block mapping with extent trees for large files",
+      "Add journaling",
+      "Enable encryption",
+      "Improve directory indexing"
+    ],
+    "answer": "Replace indirect block mapping with extent trees for large files",
+    "explanation": "Extents improve performance and reduce metadata for large files."
+  },
+  {
+    "id": 264,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is non-preemptive and based on priority?",
+    "options": [
+      "Non-preemptive priority scheduling",
+      "Round Robin",
+      "FCFS",
+      "SJF"
+    ],
+    "answer": "Non-preemptive priority scheduling",
+    "explanation": "Once a process starts, it runs to completion even if a higher-priority process arrives."
+  },
+  {
+    "id": 265,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a necessary condition for deadlock?",
+    "options": [
+      "Mutual exclusion",
+      "Preemption",
+      "Shared resources",
+      "High CPU usage"
+    ],
+    "answer": "Mutual exclusion",
+    "explanation": "At least one resource must be held in a non-sharable mode."
+  },
+  {
+    "id": 266,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'scatter-gather' I/O in device drivers?",
+    "options": [
+      "Transfer data from multiple non-contiguous buffers in a single operation",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Transfer data from multiple non-contiguous buffers in a single operation",
+    "explanation": "Scatter-gather reduces the number of I/O operations by handling fragmented data."
+  },
+  {
+    "id": 267,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a process from forking too many child processes?",
+    "options": [
+      "Resource limits (e.g., ulimit)",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Resource limits (e.g., ulimit)",
+    "explanation": "The kernel enforces per-process and per-user limits on resources like processes."
+  },
+  {
+    "id": 268,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'df' in Linux?",
+    "options": [
+      "Report file system disk space usage",
+      "Monitor CPU usage",
+      "Check memory usage",
+      "List open files"
+    ],
+    "answer": "Report file system disk space usage",
+    "explanation": "Df shows total, used, and available disk space for mounted file systems."
+  },
+  {
+    "id": 269,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'overcommit_memory' setting in Linux?",
+    "options": [
+      "Control whether the system allows memory overcommit",
+      "Set page size",
+      "Manage swap size",
+      "Enable huge pages"
+    ],
+    "answer": "Control whether the system allows memory overcommit",
+    "explanation": "Overcommit allows malloc() to succeed even if physical memory is insufficient."
+  },
+  {
+    "id": 270,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by AMQP (Advanced Message Queuing Protocol)?",
+    "options": [
+      "Message queues with routing and queuing semantics",
+      "Shared memory",
+      "Pipes",
+      "Sockets"
+    ],
+    "answer": "Message queues with routing and queuing semantics",
+    "explanation": "AMQP is a standard for message-oriented middleware like RabbitMQ."
+  },
+  {
+    "id": 271,
+    "topic": "Process Synchronization",
+    "question": "What is the main disadvantage of using Peterson's algorithm?",
+    "options": [
+      "Only works for two processes",
+      "Requires special hardware",
+      "Causes high CPU usage",
+      "Doesn't ensure mutual exclusion"
+    ],
+    "answer": "Only works for two processes",
+    "explanation": "Peterson's algorithm is not easily generalizable to N processes."
+  },
+  {
+    "id": 272,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'mmap' system call with MAP_ANONYMOUS?",
+    "options": [
+      "Allocate zero-filled memory not backed by a file",
+      "Map a file into memory",
+      "Create a shared memory segment",
+      "Allocate stack space"
+    ],
+    "answer": "Allocate zero-filled memory not backed by a file",
+    "explanation": "MAP_ANONYMOUS is used for dynamic memory allocation alternative to brk/sbrk."
+  },
+  {
+    "id": 273,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of using HTree indexing in ext3/ext4?",
+    "options": [
+      "O(log n) directory lookup time for large directories",
+      "Reduced disk fragmentation",
+      "Improved security",
+      "Faster file deletion"
+    ],
+    "answer": "O(log n) directory lookup time for large directories",
+    "explanation": "HTree uses a hash table and tree structure to avoid linear directory scans."
+  },
+  {
+    "id": 274,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time Linux with SCHED_DEADLINE?",
+    "options": [
+      "Earliest Deadline First (EDF)",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Earliest Deadline First (EDF)",
+    "explanation": "SCHED_DEADLINE uses EDF to schedule tasks with deadlines."
+  },
+  {
+    "id": 275,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main purpose of the 'safe sequence' in the Banker's Algorithm?",
+    "options": [
+      "A sequence of process execution that avoids deadlock",
+      "A list of safe resources",
+      "A CPU scheduling order",
+      "A memory allocation pattern"
+    ],
+    "answer": "A sequence of process execution that avoids deadlock",
+    "explanation": "The Banker's Algorithm checks if a safe sequence exists before granting a request."
+  },
+  {
+    "id": 276,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'sysfs' file system in Linux?",
+    "options": [
+      "Export kernel objects and device information to user space",
+      "Store user files",
+      "Cache disk blocks",
+      "Manage process IDs"
+    ],
+    "answer": "Export kernel objects and device information to user space",
+    "explanation": "Sysfs provides a structured view of devices, drivers, and kernel subsystems."
+  },
+  {
+    "id": 277,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot open a file it does not have permission to read?",
+    "options": [
+      "File permission checks on open()",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "File permission checks on open()",
+    "explanation": "The kernel checks the process's user ID against the file's permission bits."
+  },
+  {
+    "id": 278,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'du' in Linux?",
+    "options": [
+      "Estimate file space usage",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Estimate file space usage",
+    "explanation": "Du shows disk usage of files and directories."
+  },
+  {
+    "id": 279,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'min_free_kbytes' parameter in Linux?",
+    "options": [
+      "Reserve a minimum amount of memory for atomic allocations",
+      "Set page size",
+      "Manage swap size",
+      "Enable huge pages"
+    ],
+    "answer": "Reserve a minimum amount of memory for atomic allocations",
+    "explanation": "This prevents the system from running out of memory for critical kernel operations."
+  },
+  {
+    "id": 280,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by NATS for messaging?",
+    "options": [
+      "Publish-subscribe and request-reply over TCP",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Publish-subscribe and request-reply over TCP",
+    "explanation": "NATS is a lightweight, high-performance messaging system."
+  },
+  {
+    "id": 281,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'barrier' synchronization primitive?",
+    "options": [
+      "Make a group of threads wait until all reach a certain point",
+      "Protect a critical section",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Make a group of threads wait until all reach a certain point",
+    "explanation": "Barriers are used in parallel programming to synchronize phases of computation."
+  },
+  {
+    "id": 282,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of using memory-mapped files for small, random accesses?",
+    "options": [
+      "Page fault overhead for each access",
+      "High memory usage",
+      "Security vulnerabilities",
+      "Incompatibility with C"
+    ],
+    "answer": "Page fault overhead for each access",
+    "explanation": "Each access to a new page causes a page fault, which is expensive for small reads."
+  },
+  {
+    "id": 283,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'lost+found' directory?",
+    "options": [
+      "Hold files recovered by fsck after a file system check",
+      "Store deleted files",
+      "Cache frequently accessed files",
+      "Manage user home directories"
+    ],
+    "answer": "Hold files recovered by fsck after a file system check",
+    "explanation": "Fsck places orphaned inodes (files without directory entries) here."
+  },
+  {
+    "id": 284,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in macOS and iOS for real-time tasks?",
+    "options": [
+      "Fixed-priority preemptive scheduling",
+      "Round Robin",
+      "EDF",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Fixed-priority preemptive scheduling",
+    "explanation": "Apple's XNU kernel uses fixed priorities for real-time threads."
+  },
+  {
+    "id": 285,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a deadlock recovery strategy?",
+    "options": [
+      "Rollback processes to a safe state",
+      "Use semaphores",
+      "Increase RAM",
+      "Disable interrupts"
+    ],
+    "answer": "Rollback processes to a safe state",
+    "explanation": "This requires checkpointing but can recover without termination."
+  },
+  {
+    "id": 286,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'procfs' file system in Linux?",
+    "options": [
+      "Provide a window into kernel data structures and process information",
+      "Store user files",
+      "Cache disk blocks",
+      "Manage device drivers"
+    ],
+    "answer": "Provide a window into kernel data structures and process information",
+    "explanation": "Procfs exposes system and process information as files under /proc."
+  },
+  {
+    "id": 287,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a process from accessing memory outside its address space?",
+    "options": [
+      "MMU and page table permissions",
+      "File permissions",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "MMU and page table permissions",
+    "explanation": "The MMU enforces memory protection using page table entries."
+  },
+  {
+    "id": 288,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'ps' in Linux?",
+    "options": [
+      "Report a snapshot of current processes",
+      "Monitor real-time CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Report a snapshot of current processes",
+    "explanation": "Ps shows process ID, CPU/memory usage, state, and command."
+  },
+  {
+    "id": 289,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'vm.swappiness' parameter?",
+    "options": [
+      "Control the kernel's preference for swapping vs. reclaiming cache",
+      "Set page size",
+      "Manage TLB size",
+      "Enable huge pages"
+    ],
+    "answer": "Control the kernel's preference for swapping vs. reclaiming cache",
+    "explanation": "Higher values increase swapping; lower values prefer shrinking cache."
+  },
+  {
+    "id": 290,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by RabbitMQ?",
+    "options": [
+      "AMQP message queues",
+      "Shared memory",
+      "Pipes",
+      "Sockets"
+    ],
+    "answer": "AMQP message queues",
+    "explanation": "RabbitMQ is a popular message broker implementing the AMQP standard."
+  },
+  {
+    "id": 291,
+    "topic": "Process Synchronization",
+    "question": "What is the main advantage of using read-write locks?",
+    "options": [
+      "Allow concurrent reads while ensuring exclusive writes",
+      "Faster than mutexes for all operations",
+      "Use less memory",
+      "Work only in kernel space"
+    ],
+    "answer": "Allow concurrent reads while ensuring exclusive writes",
+    "explanation": "Read-write locks improve performance for read-heavy workloads."
+  },
+  {
+    "id": 292,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'sbrk' system call in Unix?",
+    "options": [
+      "Change the program break to adjust the size of the heap",
+      "Map files into memory",
+      "Allocate stack space",
+      "Create new processes"
+    ],
+    "answer": "Change the program break to adjust the size of the heap",
+    "explanation": "Sbrk is used by malloc() to request more memory from the OS."
+  },
+  {
+    "id": 293,
+    "topic": "File System Internals",
+    "question": "What is the main disadvantage of the FAT file system for large disks?",
+    "options": [
+      "Linear traversal of file clusters is slow for large files",
+      "No support for long file names",
+      "Cannot store binary files",
+      "Requires journaling"
+    ],
+    "answer": "Linear traversal of file clusters is slow for large files",
+    "explanation": "FAT uses a linked list of clusters, requiring traversal from start to end."
+  },
+  {
+    "id": 294,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in the Linux CFS for real-time tasks?",
+    "options": [
+      "Separate real-time scheduler (SCHED_FIFO, SCHED_RR)",
+      "CFS for all tasks",
+      "EDF",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Separate real-time scheduler (SCHED_FIFO, SCHED_RR)",
+    "explanation": "Linux uses a different scheduler for real-time tasks (SCHED_* classes) than for normal tasks (CFS)."
+  },
+  {
+    "id": 295,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main limitation of the Banker's Algorithm in practice?",
+    "options": [
+      "Processes rarely know their maximum resource needs in advance",
+      "It only works with single-instance resources",
+      "High CPU overhead",
+      "Cannot prevent deadlock"
+    ],
+    "answer": "Processes rarely know their maximum resource needs in advance",
+    "explanation": "This makes the Banker's Algorithm impractical for many real-world applications."
+  },
+  {
+    "id": 296,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'debugfs' file system in Linux?",
+    "options": [
+      "Provide a simple way for drivers to export debug information",
+      "Store user files",
+      "Cache disk blocks",
+      "Manage process IDs"
+    ],
+    "answer": "Provide a simple way for drivers to export debug information",
+    "explanation": "Debugfs is a RAM-based file system for kernel debugging."
+  },
+  {
+    "id": 297,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot kill another user's process?",
+    "options": [
+      "Process ownership checks in the kill() system call",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Process ownership checks in the kill() system call",
+    "explanation": "The kernel only allows a process to signal processes owned by the same user (or root)."
+  },
+  {
+    "id": 298,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'top' in Linux?",
+    "options": [
+      "Display real-time CPU and memory usage by process",
+      "Edit text files",
+      "Compile programs",
+      "Format disks"
+    ],
+    "answer": "Display real-time CPU and memory usage by process",
+    "explanation": "Top provides a dynamic view of system resource usage."
+  },
+  {
+    "id": 299,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'page reclaim' daemon in Linux?",
+    "options": [
+      "Free up memory pages when memory is low",
+      "Allocate new pages",
+      "Handle page faults",
+      "Manage TLB entries"
+    ],
+    "answer": "Free up memory pages when memory is low",
+    "explanation": "The kswapd daemon reclaims pages by writing dirty pages to swap and freeing clean pages."
+  },
+  {
+    "id": 300,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by Kafka for messaging?",
+    "options": [
+      "Distributed commit log over TCP",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Distributed commit log over TCP",
+    "explanation": "Kafka uses a distributed log for high-throughput, durable messaging."
+  },
+  {
+    "id": 301,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'latch' synchronization primitive?",
+    "options": [
+      "Allow one-time synchronization (once open, always open)",
+      "Protect a critical section",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Allow one-time synchronization (once open, always open)",
+    "explanation": "A latch is used to signal that an event has occurred and all waiting threads can proceed."
+  },
+  {
+    "id": 302,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of using huge pages for database workloads?",
+    "options": [
+      "Reduce TLB misses and improve performance",
+      "Increase memory fragmentation",
+      "Simplify page replacement",
+      "Reduce security"
+    ],
+    "answer": "Reduce TLB misses and improve performance",
+    "explanation": "Databases with large memory footprints benefit from fewer TLB misses."
+  },
+  {
+    "id": 303,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'superblock' backup in ext file systems?",
+    "options": [
+      "Allow file system recovery if the primary superblock is corrupted",
+      "Speed up file access",
+      "Reduce fragmentation",
+      "Improve security"
+    ],
+    "answer": "Allow file system recovery if the primary superblock is corrupted",
+    "explanation": "Backup superblocks are stored in group descriptors for recovery."
+  },
+  {
+    "id": 304,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems where tasks have periods and deadlines?",
+    "options": [
+      "Rate Monotonic Scheduling (RMS)",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Rate Monotonic Scheduling (RMS)",
+    "explanation": "RMS is optimal for periodic tasks with deadlines equal to periods."
+  },
+  {
+    "id": 305,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a necessary condition for deadlock?",
+    "options": [
+      "No preemption",
+      "Shared memory",
+      "High CPU usage",
+      "Many processes"
+    ],
+    "answer": "No preemption",
+    "explanation": "Resources cannot be forcibly taken from a process holding them."
+  },
+  {
+    "id": 306,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'cdev' structure in Linux character drivers?",
+    "options": [
+      "Represent a character device in the kernel",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Represent a character device in the kernel",
+    "explanation": "Cdev is used to register character devices with the kernel."
+  },
+  {
+    "id": 307,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a process from accessing hardware directly?",
+    "options": [
+      "User/kernel mode separation",
+      "File permissions",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "User/kernel mode separation",
+    "explanation": "Hardware access requires kernel mode, which user processes cannot enter directly."
+  },
+  {
+    "id": 308,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'uptime' in Linux?",
+    "options": [
+      "Show how long the system has been running and load averages",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Show how long the system has been running and load averages",
+    "explanation": "Uptime provides a quick overview of system stability and load."
+  },
+  {
+    "id": 309,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'kswapd' kernel thread?",
+    "options": [
+      "Reclaim memory pages in the background when memory is low",
+      "Handle page faults",
+      "Allocate new pages",
+      "Manage TLB entries"
+    ],
+    "answer": "Reclaim memory pages in the background when memory is low",
+    "explanation": "Kswapd wakes up when free memory falls below a threshold and reclaims pages."
+  },
+  {
+    "id": 310,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by MQTT for messaging?",
+    "options": [
+      "Publish-subscribe over TCP/IP",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Publish-subscribe over TCP/IP",
+    "explanation": "MQTT is a lightweight protocol for IoT messaging using a broker."
+  },
+  {
+    "id": 311,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'eventfd' system call in Linux?",
+    "options": [
+      "Create a file descriptor for event notification between threads/processes",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Create a file descriptor for event notification between threads/processes",
+    "explanation": "Eventfd is used for signaling and can be integrated with epoll for I/O multiplexing."
+  },
+  {
+    "id": 312,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of using huge pages?",
+    "options": [
+      "Can lead to internal fragmentation if not fully utilized",
+      "Increase TLB misses",
+      "Slow down allocation",
+      "Reduce security"
+    ],
+    "answer": "Can lead to internal fragmentation if not fully utilized",
+    "explanation": "Allocating a 2MB huge page for a 4KB object wastes 2MB - 4KB of memory."
+  },
+  {
+    "id": 313,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'block group' in ext file systems?",
+    "options": [
+      "Group related data structures (bitmaps, inodes, data blocks) to reduce disk seeks",
+      "Store user files",
+      "Manage process IDs",
+      "Handle device interrupts"
+    ],
+    "answer": "Group related data structures (bitmaps, inodes, data blocks) to reduce disk seeks",
+    "explanation": "Block groups localize metadata and data to improve performance."
+  },
+  {
+    "id": 314,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems with dynamic deadlines?",
+    "options": [
+      "Earliest Deadline First (EDF)",
+      "Rate Monotonic Scheduling",
+      "Round Robin",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Earliest Deadline First (EDF)",
+    "explanation": "EDF is optimal for tasks with arbitrary deadlines."
+  },
+  {
+    "id": 315,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main advantage of the Ostrich algorithm?",
+    "options": [
+      "Zero overhead since deadlocks are ignored",
+      "Prevents all deadlocks",
+      "High resource utilization",
+      "Simple implementation"
+    ],
+    "answer": "Zero overhead since deadlocks are ignored",
+    "explanation": "No runtime checks or conservative allocation is needed."
+  },
+  {
+    "id": 316,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'file_operations' structure in Linux drivers?",
+    "options": [
+      "Define the callback functions for file I/O operations",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Define the callback functions for file I/O operations",
+    "explanation": "File_operations contains pointers to read, write, open, etc., functions."
+  },
+  {
+    "id": 317,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot mount a file system?",
+    "options": [
+      "Capability-based security (e.g., CAP_SYS_ADMIN)",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Capability-based security (e.g., CAP_SYS_ADMIN)",
+    "explanation": "Linux uses capabilities to grant fine-grained privileges instead of full root access."
+  },
+  {
+    "id": 318,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'watch' in Linux?",
+    "options": [
+      "Execute a command repeatedly and display the output",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Execute a command repeatedly and display the output",
+    "explanation": "Watch is useful for monitoring changing output, like 'watch free'."
+  },
+  {
+    "id": 319,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'zone_reclaim_mode' parameter in Linux?",
+    "options": [
+      "Control memory reclaim behavior in NUMA systems",
+      "Set page size",
+      "Manage swap size",
+      "Enable huge pages"
+    ],
+    "answer": "Control memory reclaim behavior in NUMA systems",
+    "explanation": "In NUMA, zone_reclaim_mode determines whether to reclaim local memory or allocate from other nodes."
+  },
+  {
+    "id": 320,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by Redis for inter-process communication on the same machine?",
+    "options": [
+      "Unix domain sockets",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Unix domain sockets",
+    "explanation": "Redis can use Unix sockets for faster local communication compared to TCP."
+  },
+  {
+    "id": 321,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'seqlock' in Linux kernel?",
+    "options": [
+      "Allow fast reads with occasional writer retries, used for simple data",
+      "Protect complex data structures",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Allow fast reads with occasional writer retries, used for simple data",
+    "explanation": "Seqlocks are used for counters and timestamps where readers can retry."
+  },
+  {
+    "id": 322,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'overcommit_ratio' parameter in Linux?",
+    "options": [
+      "Set the percentage of swap space used in overcommit calculations",
+      "Control page size",
+      "Manage TLB size",
+      "Enable huge pages"
+    ],
+    "answer": "Set the percentage of swap space used in overcommit calculations",
+    "explanation": "Overcommit_ratio determines how much swap is considered when allowing memory allocation."
+  },
+  {
+    "id": 323,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of using extents over indirect blocks?",
+    "options": [
+      "Reduced metadata overhead for large files",
+      "Better security",
+      "Faster small file access",
+      "Lower memory usage"
+    ],
+    "answer": "Reduced metadata overhead for large files",
+    "explanation": "Extents describe large contiguous regions with a single record."
+  },
+  {
+    "id": 324,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems where missing a deadline is catastrophic?",
+    "options": [
+      "Rate Monotonic Scheduling (RMS) or EDF",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Rate Monotonic Scheduling (RMS) or EDF",
+    "explanation": "Both are used in hard real-time systems with strict deadline requirements."
+  },
+  {
+    "id": 325,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a sufficient condition for deadlock in multi-instance systems?",
+    "options": [
+      "Presence of a cycle in the wait-for graph",
+      "High CPU usage",
+      "Low memory",
+      "Many processes"
+    ],
+    "answer": "Presence of a cycle in the wait-for graph",
+    "explanation": "In multi-instance systems, the wait-for graph is used for detection."
+  },
+  {
+    "id": 326,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'platform_driver' structure in Linux?",
+    "options": [
+      "Represent a driver for devices that are not discoverable by hardware",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Represent a driver for devices that are not discoverable by hardware",
+    "explanation": "Platform drivers are used for on-chip devices described in device trees or ACPI."
+  },
+  {
+    "id": 327,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a process from changing its user ID arbitrarily?",
+    "options": [
+      "Privilege separation and capability checks",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Privilege separation and capability checks",
+    "explanation": "Only processes with CAP_SETUID can change user ID."
+  },
+  {
+    "id": 328,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'time' in Linux?",
+    "options": [
+      "Measure the time taken by a command to execute",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Measure the time taken by a command to execute",
+    "explanation": "Time shows real, user, and system time for a process."
+  },
+  {
+    "id": 329,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'transparent huge pages' (THP) feature in Linux?",
+    "options": [
+      "Automatically use huge pages for anonymous memory to reduce TLB misses",
+      "Encrypt memory pages",
+      "Compress virtual memory",
+      "Detect memory leaks"
+    ],
+    "answer": "Automatically use huge pages for anonymous memory to reduce TLB misses",
+    "explanation": "THP is enabled by default and works without application changes."
+  },
+  {
+    "id": 330,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by gRPC for inter-process communication on the same machine?",
+    "options": [
+      "Unix domain sockets",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Unix domain sockets",
+    "explanation": "gRPC can use Unix sockets for efficient local communication."
+  },
+  {
+    "id": 331,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'RCU' (Read-Copy-Update) mechanism in Linux?",
+    "options": [
+      "Allow lock-free reads with deferred updates for scalable data structures",
+      "Protect critical sections",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Allow lock-free reads with deferred updates for scalable data structures",
+    "explanation": "RCU is used in the kernel for data structures like the process list."
+  },
+  {
+    "id": 332,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of transparent huge pages (THP)?",
+    "options": [
+      "Can cause latency spikes during page compaction",
+      "Increase TLB misses",
+      "Slow down allocation",
+      "Reduce security"
+    ],
+    "answer": "Can cause latency spikes during page compaction",
+    "explanation": "THP defragmentation can stall the system momentarily."
+  },
+  {
+    "id": 333,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'journal' in ext3/ext4?",
+    "options": [
+      "Log metadata changes before committing to ensure consistency after crashes",
+      "Store user file data",
+      "Manage process scheduling",
+      "Handle device interrupts"
+    ],
+    "answer": "Log metadata changes before committing to ensure consistency after crashes",
+    "explanation": "The journal allows the file system to recover quickly after a crash."
+  },
+  {
+    "id": 334,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems with a mix of periodic and aperiodic tasks?",
+    "options": [
+      "Sporadic Server or Polling Server algorithms",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Sporadic Server or Polling Server algorithms",
+    "explanation": "These algorithms reserve bandwidth for aperiodic tasks in real-time systems."
+  },
+  {
+    "id": 335,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main purpose of the 'wait-for' graph in deadlock detection?",
+    "options": [
+      "Abstract the resource allocation graph to show process waits only",
+      "Schedule CPU time",
+      "Manage memory allocation",
+      "Handle file I/O"
+    ],
+    "answer": "Abstract the resource allocation graph to show process waits only",
+    "explanation": "The wait-for graph has edges only between processes, simplifying cycle detection."
+  },
+  {
+    "id": 336,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'of_match_table' in a Linux platform driver?",
+    "options": [
+      "Match the driver to devices described in the device tree",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Match the driver to devices described in the device tree",
+    "explanation": "Of_match_table contains compatible strings that link drivers to device tree nodes."
+  },
+  {
+    "id": 337,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot bind to a privileged port (<1024)?",
+    "options": [
+      "Capability checks (CAP_NET_BIND_SERVICE)",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Capability checks (CAP_NET_BIND_SERVICE)",
+    "explanation": "Only processes with this capability (usually root) can bind to ports below 1024."
+  },
+  {
+    "id": 338,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'nice' in Linux?",
+    "options": [
+      "Adjust the priority (niceness) of a process",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Adjust the priority (niceness) of a process",
+    "explanation": "Nice values range from -20 (highest priority) to 19 (lowest)."
+  },
+  {
+    "id": 339,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'memory compaction' feature in Linux?",
+    "options": [
+      "Defragment memory to create large contiguous free blocks for huge pages",
+      "Encrypt memory",
+      "Compress virtual memory",
+      "Detect memory leaks"
+    ],
+    "answer": "Defragment memory to create large contiguous free blocks for huge pages",
+    "explanation": "Compaction moves pages to coalesce free memory."
+  },
+  {
+    "id": 340,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by D-Bus for communication between desktop applications?",
+    "options": [
+      "Message passing over a message bus daemon",
+      "Shared memory",
+      "Pipes",
+      "Sockets"
+    ],
+    "answer": "Message passing over a message bus daemon",
+    "explanation": "D-Bus provides a standardized way for applications to communicate."
+  },
+  {
+    "id": 341,
+    "topic": "Process Synchronization",
+    "question": "What is the main advantage of using RCU over reader-writer locks?",
+    "options": [
+      "Readers do not block writers and vice versa, improving scalability",
+      "Faster for small data structures",
+      "Use less memory",
+      "Simpler to implement"
+    ],
+    "answer": "Readers do not block writers and vice versa, improving scalability",
+    "explanation": "RCU allows concurrent reads and updates, but updates are more expensive."
+  },
+  {
+    "id": 342,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'vm.overcommit_memory' setting in Linux?",
+    "options": [
+      "Control the kernel's policy for memory overcommitment",
+      "Set page size",
+      "Manage swap size",
+      "Enable huge pages"
+    ],
+    "answer": "Control the kernel's policy for memory overcommitment",
+    "explanation": "Setting 0=heuristic, 1=always overcommit, 2=never overcommit beyond a limit."
+  },
+  {
+    "id": 343,
+    "topic": "File System Internals",
+    "question": "What is the main disadvantage of journaling in file systems?",
+    "options": [
+      "Additional disk writes reduce performance",
+      "Higher memory usage",
+      "Slower file deletion",
+      "Less security"
+    ],
+    "answer": "Additional disk writes reduce performance",
+    "explanation": "Changes are written to the journal before the main file system, doubling writes."
+  },
+  {
+    "id": 344,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems where tasks have different criticality levels?",
+    "options": [
+      "Fixed-priority scheduling with criticality levels",
+      "Round Robin",
+      "EDF",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Fixed-priority scheduling with criticality levels",
+    "explanation": "Critical tasks are given higher priority to ensure they meet deadlines."
+  },
+  {
+    "id": 345,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a deadlock prevention technique?",
+    "options": [
+      "Allow preemption of resources",
+      "Use Banker's Algorithm",
+      "Detect cycles",
+      "Ignore deadlocks"
+    ],
+    "answer": "Allow preemption of resources",
+    "explanation": "Preemption breaks the 'no preemption' Coffman condition."
+  },
+  {
+    "id": 346,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'probe' function in a platform driver?",
+    "options": [
+      "Initialize the device when a matching device tree entry is found",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Initialize the device when a matching device tree entry is found",
+    "explanation": "The probe function is called during driver registration if a match is found."
+  },
+  {
+    "id": 347,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a process from ptracing (debugging) another user's process?",
+    "options": [
+      "Yama LSM and ptrace_scope",
+      "File permissions",
+      "Virtual memory",
+      "Firewall"
+    ],
+    "answer": "Yama LSM and ptrace_scope",
+    "explanation": "Linux restricts ptrace to prevent privilege escalation and information leaks."
+  },
+  {
+    "id": 348,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'renice' in Linux?",
+    "options": [
+      "Change the priority of a running process",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Change the priority of a running process",
+    "explanation": "Renice allows adjusting the nice value of an existing process."
+  },
+  {
+    "id": 349,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'kcompactd' kernel thread in Linux?",
+    "options": [
+      "Perform memory compaction in the background to create huge page blocks",
+      "Handle page faults",
+      "Allocate new pages",
+      "Manage TLB entries"
+    ],
+    "answer": "Perform memory compaction in the background to create huge page blocks",
+    "explanation": "Kcompactd runs periodically to defragment memory for huge page allocation."
+  },
+  {
+    "id": 350,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by systemd for communication between services?",
+    "options": [
+      "D-Bus",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "D-Bus",
+    "explanation": "Systemd uses D-Bus for service management and communication."
+  },
+  {
+    "id": 351,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'completion' mechanism in Linux kernel?",
+    "options": [
+      "Allow one thread to wait for another to complete a task",
+      "Protect a critical section",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Allow one thread to wait for another to complete a task",
+    "explanation": "Completions are used for one-shot synchronization between threads."
+  },
+  {
+    "id": 352,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of using memory compaction?",
+    "options": [
+      "Creates large contiguous free blocks for huge page allocation",
+      "Reduces CPU usage",
+      "Speeds up I/O",
+      "Improves security"
+    ],
+    "answer": "Creates large contiguous free blocks for huge page allocation",
+    "explanation": "Compaction moves pages to coalesce free memory."
+  },
+  {
+    "id": 353,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'extents' index in ext4?",
+    "options": [
+      "Efficiently manage large files with extent trees",
+      "Add journaling",
+      "Enable encryption",
+      "Improve directory hashing"
+    ],
+    "answer": "Efficiently manage large files with extent trees",
+    "explanation": "Extent trees allow O(log n) access to file blocks for large files."
+  },
+  {
+    "id": 354,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems with mixed criticality tasks?",
+    "options": [
+      "Adaptive Mixed-Criticality (AMC) scheduling",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Adaptive Mixed-Criticality (AMC) scheduling",
+    "explanation": "AMC adjusts scheduling based on the observed criticality mode of tasks."
+  },
+  {
+    "id": 355,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main disadvantage of deadlock avoidance?",
+    "options": [
+      "Runtime overhead of checking for safe states",
+      "Low resource utilization",
+      "Complex implementation",
+      "Cannot handle multiple resources"
+    ],
+    "answer": "Runtime overhead of checking for safe states",
+    "explanation": "The Banker's Algorithm requires checking for a safe sequence on every request."
+  },
+  {
+    "id": 356,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'remove' function in a platform driver?",
+    "options": [
+      "Clean up and unregister the device when it is removed",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Clean up and unregister the device when it is removed",
+    "explanation": "The remove function is called when the device is unbound from the driver."
+  },
+  {
+    "id": 357,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot access raw disk devices?",
+    "options": [
+      "File permissions on device files (e.g., /dev/sda)",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "File permissions on device files (e.g., /dev/sda)",
+    "explanation": "Only root or members of the disk group can access raw block devices."
+  },
+  {
+    "id": 358,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'kill' in Linux?",
+    "options": [
+      "Send a signal to a process (e.g., terminate, stop, continue)",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Send a signal to a process (e.g., terminate, stop, continue)",
+    "explanation": "Kill -9 sends SIGKILL to forcefully terminate a process."
+  },
+  {
+    "id": 359,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'page writeback' mechanism in Linux?",
+    "options": [
+      "Write dirty pages to disk in the background to free memory",
+      "Encrypt memory pages",
+      "Compress virtual memory",
+      "Detect memory leaks"
+    ],
+    "answer": "Write dirty pages to disk in the background to free memory",
+    "explanation": "Writeback is performed by kernel threads like flush and pdflush."
+  },
+  {
+    "id": 360,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by Wayland for display server communication?",
+    "options": [
+      "Unix domain sockets with custom protocol",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Unix domain sockets with custom protocol",
+    "explanation": "Wayland uses a socket-based protocol for communication between clients and compositor."
+  },
+  {
+    "id": 361,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'mutex' in Linux kernel?",
+    "options": [
+      "Provide mutual exclusion with ownership and sleep-on-contention",
+      "Allow concurrent reads",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Provide mutual exclusion with ownership and sleep-on-contention",
+    "explanation": "Kernel mutexes put waiting tasks to sleep, unlike spinlocks."
+  },
+  {
+    "id": 362,
+    "topic": "Memory Optimization",
+    "question": "What is the main disadvantage of memory compaction?",
+    "options": [
+      "High CPU overhead due to page migration",
+      "Increases fragmentation",
+      "Requires more disk space",
+      "Slows down I/O"
+    ],
+    "answer": "High CPU overhead due to page migration",
+    "explanation": "Moving pages requires updating all references and copying data."
+  },
+  {
+    "id": 363,
+    "topic": "File System Internals",
+    "question": "What is the main advantage of using a B+tree for file system metadata?",
+    "options": [
+      "Efficient range queries and sequential access",
+      "Reduced disk fragmentation",
+      "Improved security",
+      "Faster file deletion"
+    ],
+    "answer": "Efficient range queries and sequential access",
+    "explanation": "B+trees are used in file systems like ReiserFS for directory indexing."
+  },
+  {
+    "id": 364,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems where tasks have stochastic execution times?",
+    "options": [
+      "Probabilistic or statistical scheduling",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Probabilistic or statistical scheduling",
+    "explanation": "These algorithms use statistical models to handle uncertainty in execution times."
+  },
+  {
+    "id": 365,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a necessary condition for deadlock?",
+    "options": [
+      "Circular wait",
+      "Preemption",
+      "Shared memory",
+      "High CPU usage"
+    ],
+    "answer": "Circular wait",
+    "explanation": "A circular chain of processes exists, each waiting for a resource held by the next."
+  },
+  {
+    "id": 366,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'devm_' (managed) functions in Linux drivers?",
+    "options": [
+      "Automatically free resources when the device is removed",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Automatically free resources when the device is removed",
+    "explanation": "Devm functions tie resource lifetime to the device, preventing leaks."
+  },
+  {
+    "id": 367,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a process from accessing /proc/kcore?",
+    "options": [
+      "File permissions and kernel hardening",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "File permissions and kernel hardening",
+    "explanation": " /proc/kcore provides a view of physical memory and is restricted to root."
+  },
+  {
+    "id": 368,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'pkill' in Linux?",
+    "options": [
+      "Send a signal to processes by name",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Send a signal to processes by name",
+    "explanation": "Pkill -f 'process_name' can kill processes matching a pattern."
+  },
+  {
+    "id": 369,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'direct reclaim' path in Linux?",
+    "options": [
+      "Reclaim memory pages synchronously when a page fault occurs and memory is low",
+      "Encrypt memory pages",
+      "Compress virtual memory",
+      "Detect memory leaks"
+    ],
+    "answer": "Reclaim memory pages synchronously when a page fault occurs and memory is low",
+    "explanation": "Direct reclaim can cause latency spikes as the faulting process waits."
+  },
+  {
+    "id": 370,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by PulseAudio for sound server communication?",
+    "options": [
+      "Unix domain sockets",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "Unix domain sockets",
+    "explanation": "PulseAudio uses sockets for client-server communication."
+  },
+  {
+    "id": 371,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'spinlock' in Linux kernel?",
+    "options": [
+      "Provide mutual exclusion in atomic context (e.g., interrupt handlers)",
+      "Allow concurrent reads",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Provide mutual exclusion in atomic context (e.g., interrupt handlers)",
+    "explanation": "Spinlocks are used where sleeping is not allowed."
+  },
+  {
+    "id": 372,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'zone watermarks' in Linux memory management?",
+    "options": [
+      "Define thresholds for when memory reclaim should start",
+      "Set page size",
+      "Manage swap size",
+      "Enable huge pages"
+    ],
+    "answer": "Define thresholds for when memory reclaim should start",
+    "explanation": "Watermarks (min, low, high) control kswapd behavior and direct reclaim."
+  },
+  {
+    "id": 373,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'xattr' (extended attributes) in file systems?",
+    "options": [
+      "Store additional metadata like ACLs, SELinux labels, etc.",
+      "Improve file access speed",
+      "Reduce fragmentation",
+      "Enable encryption"
+    ],
+    "answer": "Store additional metadata like ACLs, SELinux labels, etc.",
+    "explanation": "Extended attributes provide a way to attach name-value pairs to files."
+  },
+  {
+    "id": 374,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems with energy constraints?",
+    "options": [
+      "Energy-aware real-time scheduling",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Energy-aware real-time scheduling",
+    "explanation": "These algorithms consider both deadlines and power consumption."
+  },
+  {
+    "id": 375,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main advantage of deadlock detection?",
+    "options": [
+      "Higher resource utilization compared to prevention",
+      "No runtime overhead",
+      "Simpler implementation",
+      "No starvation"
+    ],
+    "answer": "Higher resource utilization compared to prevention",
+    "explanation": "Resources can be allocated more aggressively since deadlock is handled after the fact."
+  },
+  {
+    "id": 376,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'clk' (clock) framework in Linux drivers?",
+    "options": [
+      "Manage clock frequencies for power and performance",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Manage clock frequencies for power and performance",
+    "explanation": "The clock framework allows drivers to enable/disable and set clock rates."
+  },
+  {
+    "id": 377,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot access /dev/mem?",
+    "options": [
+      "File permissions and kernel CONFIG_STRICT_DEVMEM",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "File permissions and kernel CONFIG_STRICT_DEVMEM",
+    "explanation": " /dev/mem provides access to physical memory and is restricted for security."
+  },
+  {
+    "id": 378,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'pgrep' in Linux?",
+    "options": [
+      "List processes by name",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "List processes by name",
+    "explanation": "Pgrep returns PIDs of processes matching a name or pattern."
+  },
+  {
+    "id": 379,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'page cache' in Linux?",
+    "options": [
+      "Cache file data in memory to reduce disk I/O",
+      "Store page table entries",
+      "Hold swap data",
+      "Manage TLB entries"
+    ],
+    "answer": "Cache file data in memory to reduce disk I/O",
+    "explanation": "The page cache is a transparent cache of file data."
+  },
+  {
+    "id": 380,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by BlueZ (Bluetooth stack) for communication?",
+    "options": [
+      "D-Bus",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "D-Bus",
+    "explanation": "BlueZ uses D-Bus for exposing Bluetooth functionality to user-space applications."
+  },
+  {
+    "id": 381,
+    "topic": "Process Synchronization",
+    "question": "What is the main disadvantage of using spinlocks?",
+    "options": [
+      "Waste CPU cycles while waiting",
+      "Cause high memory usage",
+      "Are not atomic",
+      "Only work on single-core systems"
+    ],
+    "answer": "Waste CPU cycles while waiting",
+    "explanation": "Spinlocks busy-wait, consuming CPU time that could be used by other tasks."
+  },
+  {
+    "id": 382,
+    "topic": "Memory Optimization",
+    "question": "What is the main purpose of the 'slab' allocator in Linux kernel?",
+    "options": [
+      "Cache frequently used kernel objects to reduce allocation overhead",
+      "Manage user-space malloc",
+      "Handle virtual memory",
+      "Implement swap"
+    ],
+    "answer": "Cache frequently used kernel objects to reduce allocation overhead",
+    "explanation": "Slab allocation improves performance for objects like inodes and dentries."
+  },
+  {
+    "id": 383,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of 'fsck' in Unix-like systems?",
+    "options": [
+      "Check and repair file system inconsistencies",
+      "Format a disk",
+      "Mount a file system",
+      "List directory contents"
+    ],
+    "answer": "Check and repair file system inconsistencies",
+    "explanation": "Fsck is run after an unclean shutdown to ensure file system integrity."
+  },
+  {
+    "id": 384,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems with firm deadlines?",
+    "options": [
+      "Algorithms that allow occasional deadline misses with degradation",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Algorithms that allow occasional deadline misses with degradation",
+    "explanation": "Firm deadlines are less strict than hard deadlines; occasional misses are tolerable."
+  },
+  {
+    "id": 385,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "Which of the following is a deadlock recovery strategy?",
+    "options": [
+      "Preempt resources from some processes",
+      "Use semaphores",
+      "Increase RAM",
+      "Disable interrupts"
+    ],
+    "answer": "Preempt resources from some processes",
+    "explanation": "This breaks the deadlock cycle by forcibly taking resources."
+  },
+  {
+    "id": 386,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'regmap' API in Linux drivers?",
+    "options": [
+      "Provide a consistent interface for register I/O across bus types",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Provide a consistent interface for register I/O across bus types",
+    "explanation": "Regmap abstracts register access for I2C, SPI, MMIO, etc."
+  },
+  {
+    "id": 387,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism prevents a process from accessing another process's /proc/pid/mem?",
+    "options": [
+      "Yama ptrace_scope and file permissions",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "Yama ptrace_scope and file permissions",
+    "explanation": "Access to another process's memory via /proc is restricted for security."
+  },
+  {
+    "id": 388,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'killall' in Linux?",
+    "options": [
+      "Send a signal to all processes with a given name",
+      "Monitor CPU usage",
+      "Check disk space",
+      "List open files"
+    ],
+    "answer": "Send a signal to all processes with a given name",
+    "explanation": "Killall firefox will terminate all Firefox processes."
+  },
+  {
+    "id": 389,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of 'swap' in Linux?",
+    "options": [
+      "Extend virtual memory by using disk as backing store",
+      "Cache file data",
+      "Store temporary files",
+      "Hold the kernel image"
+    ],
+    "answer": "Extend virtual memory by using disk as backing store",
+    "explanation": "Swap allows the system to use more memory than physically available."
+  },
+  {
+    "id": 390,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by NetworkManager for communication?",
+    "options": [
+      "D-Bus",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "D-Bus",
+    "explanation": "NetworkManager uses D-Bus to expose network configuration to applications."
+  },
+  {
+    "id": 391,
+    "topic": "Process Synchronization",
+    "question": "What is the main purpose of the 'seqcount' in Linux kernel?",
+    "options": [
+      "Allow lock-free reads of simple data with writer serialization",
+      "Protect complex data structures",
+      "Allocate memory",
+      "Handle interrupts"
+    ],
+    "answer": "Allow lock-free reads of simple data with writer serialization",
+    "explanation": "Seqcount is used for counters and timestamps where readers can retry."
+  },
+  {
+    "id": 392,
+    "topic": "Memory Optimization",
+    "question": "What is the main advantage of the 'slab' allocator?",
+    "options": [
+      "Reduces fragmentation and allocation overhead for kernel objects",
+      "Supports arbitrary sizes",
+      "Increases memory usage",
+      "Slows down allocation"
+    ],
+    "answer": "Reduces fragmentation and allocation overhead for kernel objects",
+    "explanation": "Slab caches pre-initialized objects of the same type."
+  },
+  {
+    "id": 393,
+    "topic": "File System Internals",
+    "question": "What is the main purpose of the 'lost+found' directory after fsck?",
+    "options": [
+      "Hold recovered files that were orphaned",
+      "Store deleted files",
+      "Cache frequently accessed files",
+      "Manage user home directories"
+    ],
+    "answer": "Hold recovered files that were orphaned",
+    "explanation": "Fsck places files with no directory entry in lost+found."
+  },
+  {
+    "id": 394,
+    "topic": "CPU Scheduling Algorithms",
+    "question": "Which scheduling algorithm is used in real-time systems with soft deadlines?",
+    "options": [
+      "Algorithms that optimize average response time",
+      "Round Robin",
+      "FCFS",
+      "Multilevel Feedback Queue"
+    ],
+    "answer": "Algorithms that optimize average response time",
+    "explanation": "Soft deadlines are about performance, not correctness; missing them degrades quality but doesn't fail the system."
+  },
+  {
+    "id": 395,
+    "topic": "Deadlock Avoidance & Detection",
+    "question": "What is the main limitation of deadlock detection?",
+    "options": [
+      "Deadlock may persist for some time before being detected",
+      "Low resource utilization",
+      "Complex implementation",
+      "Cannot handle multiple resources"
+    ],
+    "answer": "Deadlock may persist for some time before being detected",
+    "explanation": "Detection is periodic, so deadlocks can exist between checks."
+  },
+  {
+    "id": 396,
+    "topic": "Device Driver Implementation",
+    "question": "What is the main purpose of the 'GPIO' subsystem in Linux?",
+    "options": [
+      "Provide a standard interface for General Purpose Input/Output pins",
+      "Allocate memory",
+      "Schedule processes",
+      "Handle interrupts"
+    ],
+    "answer": "Provide a standard interface for General Purpose Input/Output pins",
+    "explanation": "GPIO allows drivers to control pins for LEDs, buttons, etc."
+  },
+  {
+    "id": 397,
+    "topic": "Security Mechanisms",
+    "question": "Which mechanism ensures that a process cannot access /sys/firmware?",
+    "options": [
+      "File permissions and kernel hardening",
+      "Virtual memory",
+      "Caching",
+      "Swapping"
+    ],
+    "answer": "File permissions and kernel hardening",
+    "explanation": " /sys/firmware contains sensitive system information and is restricted."
+  },
+  {
+    "id": 398,
+    "topic": "System Performance Tuning",
+    "question": "What is the primary use of 'atop' in Linux?",
+    "options": [
+      "Advanced system and process monitoring with logging",
+      "Edit text files",
+      "Compile programs",
+      "Format disks"
+    ],
+    "answer": "Advanced system and process monitoring with logging",
+    "explanation": "Atop provides detailed performance metrics and can log for later analysis."
+  },
+  {
+    "id": 399,
+    "topic": "Virtual Memory Management",
+    "question": "What is the main purpose of the 'OOM killer' in Linux?",
+    "options": [
+      "Terminate a process when the system runs out of memory",
+      "Encrypt memory pages",
+      "Compress virtual memory",
+      "Detect memory leaks"
+    ],
+    "answer": "Terminate a process when the system runs out of memory",
+    "explanation": "The OOM killer selects a process to kill to free up memory and avoid system hang."
+  },
+  {
+    "id": 400,
+    "topic": "Interprocess Communication (Advanced)",
+    "question": "Which IPC method is used by UPower for power management communication?",
+    "options": [
+      "D-Bus",
+      "Shared memory",
+      "Pipes",
+      "Message queues"
+    ],
+    "answer": "D-Bus",
+    "explanation": "UPower uses D-Bus to provide power device information to applications."
+  }
+]
