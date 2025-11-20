@@ -18,7 +18,7 @@ def call_llm(prompt: str, model: str = "deepseek-r1:latest", temp: float = 0.7) 
 #     """
 #     url = "https://openrouter.ai/api/v1/chat/completions"
 #     headers = {
-#         "Authorization": "Bearer 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",
+#         "Authorization": "Bearer sk-or-v1-open router API  Key",
 #         "Content-Type": "application/json"
 #     }
 #     data = {
@@ -52,5 +52,5 @@ def call_llm(prompt: str, model: str = "deepseek-r1:latest", temp: float = 0.7) 
 
 
 
-#openrouter_api_key=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
-#https://openrouter.ai/api/v1/keys
+#openrouter_api_key=sk-or-v1open router API  Key
+    #https://openrouter.ai/api/v1/keys
