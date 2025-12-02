@@ -53,4 +53,4 @@ def call_llm(prompt: str, model: str = "deepseek-r1:latest", temp: float = 0.7) 
 
 
 #openrouter_api_key=sk-or-v1open router API  Key
-    #https://openrouter.ai/api/v1/keys
+   
