@@ -6,7 +6,7 @@ api_key = "Open-router API key of the Deepseek"
 client = OpenAI(
     api_key=api_key,
     base_url="https://api.deepseek.com/v1",
-    timeout=120.0  # ✅ Set timeout to 60 seconds (default is 10 minutes)
+    timeout=120.0  
 )
 
 prompt = "Write a Python function to calculate factorial recursively."
