@@ -106,10 +106,4 @@ Multi-language lesson support
 
 Hugging Face model integration
 
-👨‍💻 Author
 
-Ragul M
-B.Tech Information Technology
-📧 Email: ragul.mr3391@gmail.com
-
-🔗 LinkedIn | GitHub | Portfolio
